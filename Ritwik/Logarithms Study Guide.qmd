@@ -20,27 +20,27 @@ In its simplest form, a logarithm answers "How many of one number multiply toget
 
 $$ a^x = b$$ or
 
-$$log_a(b) = x $$ where $x$ is the *exponent*, $a$ is the *base* and $b$ is the *argument*. You would read the equation above as "logarithm of $b$ to the base $a$ is equal to $x$."
+$$\log_a(b) = x $$ where $x$ is the *exponent*, $a$ is the *base* and $b$ is the *argument*. You would read the equation above as "logarithm of $b$ to the base $a$ is equal to $x$."
 :::
 
 ::: {#example-1-link .callout-note appearance="simple"}
 ## Example 1
 
-Suppose you are given the equation $log_{10}(1000) = x$, and you need to find $x$. You can rewrite the equation as $2^x = 8$, and from here, you can see that $x = 3$.
+Suppose you are given the equation $\log_{10}(1000) = x$, and you need to find $x$. You can rewrite the equation as $2^x = 8$, and from here, you can see that $x = 3$.
 :::
 
 ::: {.callout-note appearance="simple"}
 ## Example 2
 
-Now consider the equation $log_x(8) = 3$. Rewriting this, you can see that this is equal to $x^3 = 8$. Thus, $x = 2$.
+Now consider the equation $\log_x(8) = 3$. Rewriting this, you can see that this is equal to $x^3 = 8$. Thus, $x = 2$.
 :::
 
-Generally, if the base is not specified, it is assumed that the base is 10. So for example, $log(a) = b$ means that the logarithm of $a$ to the base $10$ is equal to $b$.
+Generally, if the base is not specified, it is assumed that the base is 10. So for example, $\log(a) = b$ means that the logarithm of $a$ to the base $10$ is equal to $b$.
 
 ::: {.callout-note appearance="simple"}
 ## Example 3
 
-Consider the equation from [Example 1](#example-1-link). This can be rewritten as $log(1000) = x$, and the solution for $x$ is once again $x = 3$
+Consider the equation from [Example 1](#example-1-link). This can be rewritten as $\log(1000) = x$, and the solution for $x$ is once again $x = 3$
 :::
 
 ## Laws of Logarithms
@@ -50,65 +50,59 @@ There are several rules of logarithms that allows us to expand, condense and sol
 ::: callout-note
 ## Law 1: Product Rule
 
-$$log(M \cdot N) = log(M) + log(N)$$ 
-The logarithm of a product is the sum of the logarithms of the factors.
+$$\log(M \cdot N) = \log(M) + \log(N)$$ The logarithm of a product is the sum of the logarithms of the factors.
 
 For example:
 
-$$log(100) = log(10 \cdot 10) = log(10) + log(10)$$
+$$\log(100) = \log(10 \cdot 10) = \log(10) + \log(10)$$
 :::
 
 ::: callout-note
 ## Law 2: Quotient Rule
 
-$$log(\frac{M}{N}) = log(M) - log(N) $$ 
-The logarithm of a ratio of two numbers is equal to the logarithm of the **numerator** minus the logarithm of the **denominator**
+$$\log\left(\frac{M}{N}\right) = \log(M) - \log(N) $$ The logarithm of a ratio of two numbers is equal to the logarithm of the **numerator** minus the logarithm of the **denominator**
 
 For example:
 
-$$log(\frac{5}{4}) = log(5) - log(4)$$
+$$\log\left(\frac{5}{4}\right) = \log(5) - \log(4)$$
 :::
 
 ::: callout-note
 ## Law 3: Power Rule
 
-$$log(M^k) = k \cdot log(M)$$ 
-The logarithm of an exponential number is the exponent multiplied with the logarithm of the base.
+$$\log(M^k) = k \cdot \log(M)$$ The logarithm of an exponential number is the exponent multiplied with the logarithm of the base.
 
 For example:
 
-$$log(4) = log(2^2) = 2 \cdot log(2)$$
+$$\log(4) = \log(2^2) = 2 \cdot \log(2)$$
 :::
 
 ::: callout-note
 ## Law 4: Zero Rule
 
-$$log_b(1) = 0$$
-The logarithm of 1 to any base is **always** equal to 0.
-
+$$\log_b(1) = 0$$ The logarithm of 1 to any base is **always** equal to 0.
 :::
 
 ::: callout-note
 ## Law 5: Identity Rule
 
-$$log_b(b) = 1$$
+$$\log_b(b) = 1$$
 
 The logarithm of the argument, where the argument is the base of the logarith, is **always** equal to 1.
-
 :::
 
 ::: callout-note
 ## Law 6: Inverse of a logarithm
 
-$$log_b(b^k) = k$$
-The logarithm of an exponential where the base is equal to the base of the logarithm is equal to the exponent.
-
+$$\log_b(b^k) = k$$ The logarithm of an exponential where the base is equal to the base of the logarithm is equal to the exponent.
 :::
 
 ::: callout-note
 ## Law 7: Inverse of an exponent
 
-$$b^{log_b(k)} = k$$
-Raising a logarithm of a number to its own base is equal to the number itself.
-
+$$b^{log_b(k)} = k$$ Raising a logarithm of a number to its own base is equal to the number itself.
 :::
+
+# The Natural Logarithm
+
+
