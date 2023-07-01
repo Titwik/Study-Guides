@@ -101,7 +101,7 @@ The logarithm of the argument, where the argument is the base of the logarithm, 
 
 # The Natural Logarithm
 
-The natural logarithm is a mathematical function used to study problems specifically involving exponential growth and decay. Unlike the logarithms we encountered above, this logarithm always has a special base called **Euler's number**, denoted *e*.
+The natural logarithm is a mathematical function used to study problems specifically involving exponential growth and decay. Unlike the logarithms we encountered above, this logarithm always has a special base called [**Euler's number**]{#euler-number}, denoted *e*.
 
 ::: {#definition-2-link .callout-note}
 ## The Natural Logarithm
@@ -122,7 +122,6 @@ Using the definiton of a [natural logarithm](#definition-2-link), you can show t
 
 :::
 
-
 The Natural Logarithm is quite useful as it's the **inverse** of the exponential function with base *e*. 
 
 ::: {#example-5-link .callout-note appearance="simple"}
@@ -142,15 +141,93 @@ Therefore, $x = \ln(5)$.
 [Example 5](#example-5-link) shows you that $\ln(e) = 1$. This can be generalised for logarithms of any base.
 
 
-::: callout-note
+::: {#law-6-link .callout-note}
 ## Law 6: Inverse of a logarithm
 
 $$\log_b(b^k) = k$$ The logarithm of an exponential where the base is equal to the base of the logarithm is equal to the exponent.
 :::
+
+A similar result can be stated for raising a number to a logarithm of the same base.
 
 ::: callout-note
 ## Law 7: Inverse of an exponent
 
 $$b^{log_b(k)} = k$$ Raising a logarithm of a number to its own base is equal to the number itself.
 :::
+
+# Changing Bases of Logarithms
+
+Changing the base of a logarithm can be done for a variety of reasons. A couple of common reasons might be because;
+
+- **Familiarity**: Sometimes, changing the base of a logarithm can make calculations more familiar. For example, working with base 10 logarithms is common in many areas of engineering, physics and chemistry, as they allow for simpler calculations by working with powers of 10.
+
+- **Solving equations**: Changing the base of a logarithm can sometimes help make a calculation simpler. You could change the base in order to work in a base that suits the problem at hand better. An example would be wanting to work with the [natural logarithm](#definition-2-link) when working on problems involving [Euler's number](#euler-number).
+
+::: {#change-base-rule .callout-note}
+
+## Change of base rule
+
+Changing the base of any logarithm can be done by using the following formula
+
+$$\log_b(a) = \frac{\log_x(a)}{\log_x(b)}$$
+where 
+
+- $a$ is the argument
+- $b$ is the original base
+- $x$ is the new base
+
+and $a,b$ are positive, real numbers greater than 0.
+
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Example 6
+
+You are given $\log_2(e^5)$ and asked to change the base to $e$.
+
+Using the [change of base rule](#change-base-rule), 
+
+$$\log_2(e^5) = \frac{\ln(e^5)}{\ln(2)}$$
+Using [Law 6](#law-6-link), you can work out that $\ln(e^5) = 5$. Therefore, the equation above simplifies to $$\log_2(e^5) = \frac{5}{\ln(2)}$$
+
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Example 7
+
+Given the equation $7^x = 3^{x + 1}$, to solve for $x$;
+
+First, you can take the logarithm of both sides of the equation, $$\log(7^x) = \log(3^{x+1})$$
+
+Next, using Law 3, you can bring the powers of the arguments outside of the logarithm as follows, $$x\log(7) = (x+1)\log(3)$$
+
+After that, expand the right side of the equation to obtain $$x\log(7) = x\log(3) + \log(3)$$
+
+Subtracting $x\log(3)$ from both sides of the equation gives you $$x\log(7) - x\log(3) = \log(3)$$ From which you can pull a factor of $x$ out on the left, giving you $$x \cdot (\log(7) - \log(3)) = \log(3)$$
+
+Finally, you can divide both sides by $(\log(7) - \log(3))$, and so you conclude that $$x = \frac{\log(3)}{\log(7) - \log(3)}$$
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
