@@ -1,0 +1,71 @@
+---
+title: "Addition and scalar multiplication: questions"
+author: "Kin Wang Pang"
+abstract-title: Summary
+abstract: A selection of questions for the study guide on addition and scalar multiplication.
+
+---
+
+*Before attempting these questions, it is highly recommended that you read [Guide: Addition and scalar multiplication](additionandscalarmultiplication.qmd).*
+
+## Q1 {-}
+
+Answer the following questions.
+
+1.1. $\vec{a} = 4\hat{i} + 5\hat{j} + 7\hat{k}$, $\vec{b} = 8\hat{i} + 2\hat{j} + 4\hat{k}$. Find $\vec{a} + \vec{b}$.
+
+1.2. $\vec{a} = 0\hat{i} + 3\hat{j} + 4\hat{k}$, $\vec{b} = 2\hat{i} + 0\hat{j} + 5\hat{k}$. Find $\vec{a} + \vec{b}$.
+
+1.3. $\vec{a} = -2\hat{i}  + 6\hat{k}$, $\vec{b} = -4\hat{i} + 11\hat{j} -8\hat{k}$. Find $\vec{a} - \vec{b}$.
+
+1.4. $\vec{a} = 4\hat{i} + 12\hat{j} -7\hat{k}$, $\vec{b} = 3\hat{i} -3\hat{j} -2\hat{k}$. $\vec{c} = 11\hat{i} -4\hat{j} +9\hat{k}$ Find $\vec{a} - (\vec{b} + \vec{c})$.
+
+## Q2 {-}
+
+Solve the following in terms of $\alpha$, $\beta$ and $\gamma$.
+
+2.1. $\vec{a} = \pmatrix{\alpha \\2\beta}$, $\vec{b} = \pmatrix{3\alpha \\5\beta}$. Find $\vec{a} + \vec{b}$.
+
+2.2. $\vec{a} = \pmatrix{5 \\3\beta\\5\gamma}$, $\vec{b} = \pmatrix{-2\\2\alpha\\6\gamma}$. Find $\vec{a} - \vec{b}$.
+
+2.3. $\vec{a} = \pmatrix{2\alpha \\3\beta\\4\gamma}$, $\vec{b} = \pmatrix{-2\alpha\\\beta\\0}$, $\vec{c} = \pmatrix{0\\4\beta\\4\gamma}$. Find $\vec{a} + \vec{b} - \vec{c}$.
+
+2.4. $\vec{a} = \pmatrix{2\alpha}$. What is $\vec{a} + 0$?
+
+## Q3 {-}
+
+Answer the following questions.
+
+3.1. $\vec{u} = 5\hat{j} + 6\hat{k}$. Find $3\vec{u}$.
+
+3.2. $\vec{v} = \pmatrix{0\\-3\\7}$. Find $-6\vec{v}$.
+
+3.3. $\vec{u} = \pmatrix{0\\5\\6}$ and $\vec{v}$ is the same is above. Find $4\vec{v} - 3\vec{u}$.
+
+3.4. $\vec{w} = \pmatrix{2\\3\\-4}$. Find $-2\vec{w} - (4\vec{u} -2\vec{v})$.
+
+## Q4 {-}
+
+Answer the following questions.
+
+4.1.$A = (3,4,5)$. $B = (-2,5,7)$. Find $\vec{AB}$.
+
+4.2.$A = (2,5,7)$, $B = (6,11,7)$. $C = (0,1,2)$. Find $\vec{AB} - \vec{AC}$.
+
+4.3.$A = (1,8)$, $B = (3,14)$, $C = (m,-2m)$. If $\vec{AB}$ and $\vec{BC}$ are parallel, find $m$.
+
+4.4.$\vec{AB} = \pmatrix{6,7,-2}$. $B = (1,5,-9)$. Find the coordinate of $A$.
+
+
+4.5.$\vec{a} = 2\hat{i} + 3\hat{j}$. $\vec{b} = 3\hat{i} -5\hat{j}.$ Find $4\hat{i} + 7\hat{j}$ in terms of $\vec{a}$ and $\vec{b}$.
+
+4.6.$\vec{a} = \pmatrix{3\\5\\\gamma}$, $\vec{b} = \pmatrix{-1\\-3\\4}$. $2\vec{a} + 3\vec{b} = \pmatrix{\alpha\\\beta\\0}$. Solve for the unknowns. 
+
+4.7.Given that $\vec{a}$ and $\vec{b}$ are parallel. $\vec{a} = (k-7)\hat{i} + (5j+1)\hat{j}$, $\vec{b} = -2\hat{i} + 8\hat{j}$. Solve for $k$. 
+
+4.8.$5\pmatrix{\alpha\\3\\7\\1} - \pmatrix{-5\\\beta\\2\\-5} = \pmatrix{2\alpha\\3\beta\\\gamma\\2\delta} + 2\pmatrix{-1\\4\\6\\\delta}$. Solve for the unknowns.
+---
+
+[Please click this link to find the answers.](as-additionandscalarmultiplication.qmd)
+
+---

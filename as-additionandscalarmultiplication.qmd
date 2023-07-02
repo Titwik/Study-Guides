@@ -1,0 +1,57 @@
+---
+title: "Addition and scalar multiplication: answers"
+author: "Kin Wang Pang"
+abstract-title: Summary
+abstract: Answers to questions relating to the guide on addition and scalar multiplication.
+
+---
+
+*These are the answers to [Questions: Addition and scalar multiplication](qs-additionandscalarmultiplication.qmd).* **Please attempt the questions before reading these answers!**
+
+## Q1 {-}
+
+Solve the following questions.
+
+1.1. For the $\hat{i}$ component, $4 + 8 = 12$.For the $\hat{j}$ component, $5 + 2 = 7$.For the $\hat{k}$ component, $7 + 4 = 11$. So the answer is $12\hat{i} + 7\hat{j} + 11\hat{k}$.
+
+1.2. $2\hat{i} + 3\hat{j} + 9\hat{k}$.
+
+1.3. $2\hat{i} - 11\hat{j} + 14\hat{k}$.
+
+1.4. $i$th: $4- (3+11) = -10$, $j$th: $12- (-3-4) = 19$, $i$th: $-7-(-2+9) = -14$. SO the answer is $-10\hat{i} + 19\hat{j} -14\hat{k}$.
+
+## Q2 {-}
+
+Solve the following questions.
+
+2.1. $\pmatrix{4\alpha \\7\beta}$
+
+2.2. $\pmatrix{7 \\ 3\beta - 2\alpha \\ -\gamma}$
+
+2.3. $\vec{0}$ or $\pmatrix{0\\0\\0}$. This is different from the scalar $0$.
+
+2.4. This question is erroneous. You cannot add $\vec{a}$ to a scalar $0$.
+
+## Q3{-}
+
+3.1. $3\vec{u} = (3\times5\hat{j}) + (3\times6\hat{k}) = 15\hat{j} + 18\hat{k}$.
+
+3.2. $\pmatrix{0\\18\\42}$.
+
+3.3. $\pmatrix{0\\-27\\10}$
+
+3.4. $\pmatrix{-4\\-32\\-2}$
+
+## Q4 {-}
+
+4.1. $\vec{AB} = \vec{AO} + \vec{OB} = -\vec{OA} + \vec{OB}$, where $\vec{OA}$ and $\vec{OB}$ is the respective coordinates of $A$ and $B$ written in vector form. So $\vec{AB} = \pmatrix{-2-3\\5-4\\7-5} = \pmatrix{-5\\1\\2}$
+
+4.2.$\vec{AB} = \pmatrix{4\\6\\0}$, $\vec{AC} = \pmatrix{-2\\-4\\-5}$. $\vec{AB} - \vec{AC} = \pmatrix{6\\10\\5}$. You can also calculate this by noticing $\vec{AB} - \vec{AC} = \vec{CA} + \vec{AB} = \vec{CB}$. Then $\vec{CB} = \pmatrix{6-0\\11-1\\7-2} = \pmatrix{6\\10\\5} $ as required
+
+4.3. $\vec{AB} = \lambda\vec{BC}$, where \lambda is a scalar.
+
+4.4.
+
+4.5.
+
+4.6.
