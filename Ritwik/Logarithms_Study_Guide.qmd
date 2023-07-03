@@ -43,7 +43,7 @@ Suppose you are given the equation $\log_{10}(1000) = x$, and you need to find $
 Now consider the equation $\log_x(8) = 3$. Rewriting this, you can see that this is equal to $x^3 = 8$. Therefore $x = 2$.
 :::
 
-Generally, if the base is not specified, it is assumed that the base is 10. So for example, $\log(a) = b$ means that the logarithm of $a$ to the base $10$ is equal to $b$.
+Generally, if the base is not specified, it is assumed that the base is 10. For example, $\log(a) = b$ means that the logarithm of $a$ to the base $10$ is equal to $b$.
 
 ::: {.callout-note appearance="simple"}
 ## Example 3
@@ -117,12 +117,20 @@ The Natural Logarithm shares the same domain as the logarithms above, namely tha
 
 Suppose you're given the equation $\ln(x) = 4$, and you've been asked to find $x$.
 
-Using the definiton of a [natural logarithm](#definition-2-link), you can show that $\log_e(x) = 4$. Then, using the definition of a [logarithm](#definition-1-link), you can conclude that $x = e^4$.
-
+Using the definiton of a [natural logarithm](#definition-2-link), you can show that $\log_e(x) = 4$. Then, using the definition of a [logarithm](#definition-1-link), you can conclude that $x = e^4$. 
 
 :::
 
-The Natural Logarithm is quite useful as it's the **inverse** of the exponential function with base *e*. 
+The Natural Logarithm is quite useful as it's the **inverse** of the exponential function with base *e*. A graph of the natural logarithm, as well as its corresponding exponential curve is shown in Figure 1.
+
+::: {.content-visible when-format="html"}
+
+<div style="text-align: left;">
+![Figure 1: A graph that shows the natural logarithm, along the $e^x$ curve. Each curve is a reflection of the other in the line $y = x$, making them inverses of each other. Note that $\ln(x)$ only takes positive $x$ values, and is undefined for $x = 0$.](log_curve.png){fig-alt="A graph of the natural logarithm and it's inverse, the exponential function with Euler's number as the base."}
+  
+</div>
+
+:::
 
 ::: {#example-5-link .callout-note appearance="simple"}
 
@@ -163,7 +171,7 @@ Changing the base of a logarithm can be done for a variety of reasons. A couple 
 
 - **Solving equations**: Changing the base of a logarithm can sometimes help make a calculation simpler. You could change the base in order to work in a base that suits the problem at hand better. An example would be wanting to work with the [natural logarithm](#definition-2-link) when working on problems involving [Euler's number](#euler-number).
 
-- **Using Calculators**: Some calculators may only allow logarithms of base 10 or the natural logarithm to be computed. For that reason, it's important to know how to write out logarithms of any base into one that's required for use.
+- **Using Calculators**: Some calculators may only allow logarithms of base 10 or the natural logarithm to be computed. For this reason, it's important to know how to write out logarithms of any base into one that's required for use.
 
 ::: {#change-base-rule .callout-note}
 
@@ -219,7 +227,7 @@ Finally, you can divide both sides by $(\log(7) - \log(3))$, and so you conclude
 
 Given the equation $5^{2x} + 7(5^x) - 30 = 0$, you are asked to solve for $x$.
 
-Start by letting $y = 5^x$. Then, you can rewrite the equation given as $(5^x)^2 + 7(5^x) - 30 = 0$ using *laws of indices*, which is the same as writing $$y^2 +7y - 30 = 0$$
+Start by letting $y = 5^x$. Then, you can rewrite the equation given as $(5^x)^2 + 7(5^x) - 30 = 0$ using **laws of indices**, which is the same as writing $$y^2 +7y - 30 = 0$$
 
 Recognizing that this is a quadratic equation, you can use the quadratic formula, or otherwise, to show that $$y = -10 \quad \text{or} \quad y = 3$$
 
@@ -244,13 +252,37 @@ Therefore, you can conclude that $$x = \frac{3}{\log(5)}$$
 
 Answer: It is `r fitb(4)`.
 
+2. What is the value of $\log_{3}(27)$?
 
+Answer: `r mcq(c(4, answer = 3, 2, 1))`
+
+3. Determine whether the following can be evaluated:
+
+(a) $\log_{14}(135)$? `r torf(TRUE)`
+\quad
+
+(b) $\log_3(-9)$? `r torf(FALSE)`
+(c) $\log_{1234}(12.34)$? `r torf(TRUE)`
 
 :::
 
 :::
 
+::: {.content-hidden when-format="html"}
 
+1. What is the value of the logarithm of $\log_{10}(10,000)$?
+
+2. What is the value of $\log_{3}(27)$?
+
+3. Determine whether the following can be evaluated:
+
+(a) $\log_{14}(135)$? 
+\quad
+
+(b) $\log_3(-9)$? 
+(c) $\log_{1234}(12.34)$? 
+
+:::
 
 
 
