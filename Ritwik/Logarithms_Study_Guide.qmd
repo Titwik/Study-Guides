@@ -126,7 +126,7 @@ The Natural Logarithm is quite useful as it's the **inverse** of the exponential
 ::: {.content-visible when-format="html"}
 
 <div style="text-align: left;">
-![Figure 1: A graph that shows the natural logarithm, along the $e^x$ curve. Each curve is a reflection of the other in the line $y = x$, making them inverses of each other. Note that $\ln(x)$ only takes positive $x$ values, and is undefined for $x = 0$.](log_curve.png){fig-alt="A graph of the natural logarithm and it's inverse, the exponential function with Euler's number as the base."}
+![Figure 1: A graph that shows the natural logarithm $\ln(x)$, along with the $e^x$ curve. Each curve is a reflection of the other in the line $y = x$, making them inverses of each other. Note that $\ln(x)$ only takes positive $x$ values, and is undefined for $x = 0$.](log_curve.png){fig-alt="A graph of the natural logarithm and it's inverse, the exponential function with Euler's number as the base."}
   
 </div>
 
@@ -207,17 +207,17 @@ Using [Law 6](#law-6-link), you can work out that $\ln(e^5) = 5$. Therefore, the
 
 ## Example 7
 
-Given the equation $7^x = 3^{x + 1}$, to solve for $x$;
+Given the equation $3^x = 7^{x + 1}$, to solve for $x$;
 
-First, you can take the logarithm of both sides of the equation, $$\log(7^x) = \log(3^{x+1})$$
+First, you can take the logarithm of both sides of the equation, $$\log(3^x) = \log(7^{x+1})$$
 
-Next, using Law 3, you can bring the powers of the arguments outside of the logarithm as follows, $$x\log(7) = (x+1)\log(3)$$
+Next, using Law 3, you can bring the powers of the arguments outside of the logarithm as follows, $$x\log(3) = (x+1)\log(7)$$
 
-After that, expand the right side of the equation to obtain $$x\log(7) = x\log(3) + \log(3)$$
+After that, expand the right side of the equation to obtain $$x\log(3) = x\log(7) + \log(7)$$
 
-Subtracting $x\log(3)$ from both sides of the equation gives you $$x\log(7) - x\log(3) = \log(3)$$ From which you can pull a factor of $x$ out on the left, giving you $$x \cdot (\log(7) - \log(3)) = \log(3)$$
+Subtracting $x\log(7)$ from both sides of the equation gives you $$x\log(3) - x\log(7) = \log(7)$$ From which you can pull a factor of $x$ out on the left, giving you $$x \cdot (\log(3) - \log(7)) = \log(7)$$
 
-Finally, you can divide both sides by $(\log(7) - \log(3))$, and so you conclude that $$x = \frac{\log(3)}{\log(7) - \log(3)}$$
+Finally, dividing both sides by $(\log(3) - \log(7))$, you conclude that $$x = \frac{\log(7)}{\log(3) - \log(7)}$$
 
 :::
 
