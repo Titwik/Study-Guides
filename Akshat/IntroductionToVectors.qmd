@@ -7,10 +7,13 @@ format:
 execute: 
   warning: false
 ---
+
+---
  
 ```{r, setup, include = FALSE}
 library("webexercises")
 ```
+
 ## Introduction {-}
 
 In mathematics, physics, engineering and technology, you will come across two types of quantities, scalar quantities such as length, mass, time, distance, density, area, volume, temperature, work, etc. and vector quantities like position, displacement, velocity, acceleration, force, momentum, etc.
@@ -59,32 +62,145 @@ A car A travels from point P to point Q with a velocity of $80 km/hr$. Simultane
 
 Continuing the Example 1.2, consider the car B to be travelling in the same direction as car A but with half the velocity. Visually, the velocity vector would also become half for the second car.
 
+:::
+
+## Free and Localized Vectors{-}
+
+If the initial point of a vector can be chosen then the vector is said to be a free vector. A free vector can be displaced parallel to itself as long as the magnitude and the direction stay the same. If the initial point is restricted to a specific point then that vector is called a localized vector.
+
+::: {.callout-note appearance="simple"}
+ 
+## Example 1.4
+
+Force, momentum, impulse are some examples of free vectors because they are scalar and independent of position, whereas, displacement and velocity vectors are localized vectors because they are vectors and dependent on position.
 
 :::
 
-## Vectors In Three-Dimensional Space{-}
-A vector $\vec{a}$ can be expressed in two-dimensional and three-dimensional space through various coordinate systems. You will see the standard cartesian coordinate system in this guide.
-
-##### Position Vectors
-
-Consider a point B in space, having coordinates (x,y,z) with respect  to the origin O(0,0,0). Then, the vector $\vec{OP}$ is the position vector for the point P.The magnitude of $\vec{OP}$ is given by 
-
-$|\vec{OP}|=\sqrt{x^2+y^2+z^2}$
-
 ## Different types of vectors{-}
 
-- **Zero or Null Vector**: A vector $\vec{a}$ is said to be a zero or a null vector if its magnitude is zero. For example, a stationary body has the velocity vector as zero. 
+- **Zero or Null Vector**: A vector $\vec{a}$ is said to be a zero or a null vector if its magnitude is zero. For example, a stationary body has the velocity vector as zero.
 
-- **Collinear vectors**: A vector is said to be collinear if it is coincident with the given vector, i.e., they have the same direction but need not have the same magnitude. 
+- **Like and Unlike Vectors**: Vectors having the same direction are known as like vectors whereas vectors with opposite directions are called unlike vectors. These are also called parallel and anti-parallel vectors respectively too.
 
-- **Negative of A Vector**: A vector whose magnitude is the same as that of the given vector $\vec{a}$ but is in the opposite direction is called the negative of a vector and is denoted by -$\vec{a}$. These are also collinear vectors.
+- **Collinear Vectors**: A vector is said to be collinear if it is coincident with the given vector, i.e., they have the same direction but need not have the same magnitude.
+
+- **Coplanar Vectors**: Vectors are coplanar if they are parallel to the same plane or lying on the same plane.
+
+- **Equal Vectors**: Vectors are said to be equal if they have the same magnitude as well as the direction. 
+
+- **Negative Vector**: A vector whose magnitude is the same as that of the given vector $\vec{a}$ but is in the opposite direction is called the negative of a vector and is denoted by -$\vec{a}$. These are also collinear vectors.
 
 ::: {.callout-note appearance="simple"}
 
-## Example 1.4
+## Example 1.5
 
 When a ball is dropped from a height, gravity acts in the same direction as the motion of the ball, hence, the gravitational force $\vec{g}=10m/s^2$. A negative gravitational force would mean that gravity is working in the opposite direction of the motion, which is the case of a vertically projected body, here, $-\vec{g}$ is applied.
 
 :::
 
--
+
+## Vectors In Three-Dimensional Space{-}
+A vector $\vec{a}$ can be expressed in two-dimensional and three-dimensional space through various coordinate systems. You will see the standard cartesian coordinate system in this guide.
+
+##### $\mathbf{Unit Vectors}$
+
+Unit vectors are vectors whose magnitude is exactly 1 unit. These are represented by the symbol $‘^’$, which is called a cap or a hat. Consider the vector $\vec{a}$. Then the unit vector of $\vec{a}$ would be the actual vector divided by its magnitude: 
+
+$\hat{a}=\frac{\vec{a}}{|\vec{a}|}$
+
+In a three-dimensional space, $\hat{i}$, $\hat{j}$, $\hat{k}$ are the unit vectors along the x-axis, y-axis and z-axis respectively. These are also written like $\mathbf{i},\mathbf{j},\mathbf{k}$ and any vector in the cartesian coordinate system can be generally represented in terms of this.
+
+Any vector $\vec{a}$ can be expressed in the format
+
+$\vec{a}=x\mathbf{i}+y\mathbf{j}+z\mathbf{k}$, where $x,y,z \in \mathbb{R}$ 
+
+where x is the distance along the x-axis, y is the distance along they-axis and z is the direction along the z-axis.
+
+::: {.callout-note appearance="simple"}
+
+## Example 1.6
+
+You are given a vector $\vec{a}=2\mathbf{i}+5\mathbf{j}+4\mathbf{k}$, this means that the vector $\vec{a}$ is a free vector with 2 units along the x-axis, 5 units along the y-axis and 4 units along the z-axis. 
+
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Example 1.7
+
+You are given a vector $\vec{b}=-7\mathbf{k}+3\mathbf{i}$, this means that the vector $\vec{b}$ is a free vector with 3 units along the x-axis, 0 units along the y-axis and 7 units along the negative z-axis. This means that the vector lies in the x-z plane, making it a two-dimensional vector.
+
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Example 1.8
+
+You are given a vector $\vec{c}=25\mathbf{i}$, this means that the vector $\vec{c}$ has direction only along the x-axis and a magnitude of 25. This a one-dimensional vector.
+
+:::
+
+##### $\mathbf{Column Vectors}$
+
+This is another way of representing vectors. A column vector is a vector whose components are listed vertically in a single column.
+So, a vector $\vec{a}$ can be written as:
+
+$\vec{a}=x\mathbf{i}+y\mathbf{j}+z\mathbf{k}=\begin{pmatrix}x\\y\\z\end{pmatrix}$, where $x,y,z \in \mathbb{R}$  
+
+::: {.callout-note appearance="simple"}
+
+## Example 1.9
+
+You are given the vector $\vec{l}=3\mathbf{i}-4\mathbf{j}+5\mathbf{k}$, to represent this vector in column notation you make a $3 \times 1$ matrix with entries 3,-4 and 5 respectively. So, $\vec{l}=3\mathbf{i}-4\mathbf{j}+5\mathbf{k}=\begin{pmatrix}3\\-4\\5\end{pmatrix}$
+
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Example 1.10
+
+To find if the vectors in Example 1.9 and $\vec{d}=\begin{pmatrix}6\\-8\\10\end{pmatrix}$ are parallel or not, you check if the coefficients are the same or a multiple of it. Since $\frac{3}{6}=\frac{-4}{-8}=\frac{5}{10}=\frac{1}{2}$ hence, these two vectors $\vec{l}$ and $\vec{d}$ are parallel to each other.
+
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Example 1.11
+
+To express the vector $\vec{B}=\begin{pmatrix}7\\1\\4\end{pmatrix}$ in terms of $\mathbf{i},\mathbf{j},\mathbf{k}$, you can write $\vec{B}=\begin{pmatrix}7\\1\\4\end{pmatrix}=7\mathbf{i}+\mathbf{j}+4\mathbf{k}$
+
+:::
+
+##### $\mathbf{Position Vectors}$
+
+Vectors that indicate the position of a body are known as position vectors. Consider a point P in space, having coordinates $(x,y,z)$ with respect  to the origin $O(0,0,0)$. Then, the vector $\vec{OP}$ is the position vector for the point P. This is also represented through the $\vec{r}$ vector.
+
+$\vec{r}=x\mathbf{i}+y\mathbf{j}+z\mathbf{k}$, where $x,y,z \in \mathbb{R}$ 
+
+Then the magnitude of the position vector $\vec{r}$ is given by $|\vec{r}|=\sqrt{x^2+y^2+z^2}$.
+
+Any vector $\vec{a}=x\mathbf{i}+y\mathbf{j}+z\mathbf{k}$ can have its unit vector expressed as 
+
+$\hat{a}=\frac{\vec{a}}{|\vec{a}|}=\frac{x\mathbf{i}+y\mathbf{j}+z\mathbf{k}}{|\vec{a}|}=\frac{x\mathbf{i}+y\mathbf{j}+z\mathbf{k}}{\sqrt{x^2+y^2+z^2}}$
+
+So, $\hat{a}=\frac{x\mathbf{i}+y\mathbf{j}+z\mathbf{k}}{\sqrt{x^2+y^2+z^2}}$
+
+::: {.callout-note appearance="simple"}
+
+## Example 1.12
+
+The vector given is $\vec{p}=\mathbf{i}+4\mathbf{j}-9\mathbf{k}$, to find the unit vector for this, you find the magnitude of this vector, $|\vec{p}|=\sqrt{1^2+4^2+(-9)^2}$. Then the unit vector is $\hat{p}=\frac{\mathbf{i}+4\mathbf{j}-9\mathbf{k}}{\sqrt{1^2+4^2+(-9)^2}}=\frac{\mathbf{i}+4\mathbf{j}-9\mathbf{k}}{\sqrt{98}}=\frac{1}{7\sqrt{2}}\mathbf{i}+\frac{4}{7\sqrt{2}}\mathbf{j}-\frac{9}{7\sqrt{2}}\mathbf{k}$
+
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Example 1.13
+
+The vector given is $\vec{q}=-4\mathbf{i}+2\mathbf{j}+11\mathbf{k}$, to find the unit vector for this, you find the magnitude of this vector, $|\vec{q}|=\sqrt{(-4)^2+2^2+11^2}=\sqrt{141}$. Then the unit vector is $\hat{q}=\frac{-4\mathbf{i}+2\mathbf{j}+11\mathbf{k}}{\sqrt{141}}=-\frac{4}{\sqrt{141}}\mathbf{i}+\frac{2}{\sqrt{141}}\mathbf{j}+\frac{11}{\sqrt{141}}\mathbf{k}$
+
+:::
+
+
+
+
