@@ -52,16 +52,16 @@ Answer the following questions.
 
 4.2.$A = (2,5,7)$, $B = (6,11,7)$. $C = (0,1,2)$. Find $\vec{AB} - \vec{AC}$.
 
-4.3.$A = (1,8)$, $B = (3,14)$, $C = (m,-2m)$. If $\vec{AB}$ and $\vec{BC}$ are parallel, find $m$.
+4.3.$A = (2,9)$, $B = (12,4)$, $C = (4k,3k)$. If $\vec{AB}$ and $\vec{BC}$ are parallel, find $m$.
 
 4.4.$\vec{AB} = \pmatrix{6,7,-2}$. $B = (1,5,-9)$. Find the coordinate of $A$.
 
 
-4.5.$\vec{a} = 2\hat{i} + 3\hat{j}$. $\vec{b} = 3\hat{i} -5\hat{j}.$ Find $4\hat{i} + 7\hat{j}$ in terms of $\vec{a}$ and $\vec{b}$.
+4.5.$\vec{a} = 2\hat{i} + 3\hat{j}$. $\vec{b} = 3\hat{i} -5\hat{j}.$ Find $13\hat{i} + -9\hat{j}$ in terms of $\vec{a}$ and $\vec{b}$.
 
 4.6.$\vec{a} = \pmatrix{3\\5\\\gamma}$, $\vec{b} = \pmatrix{-1\\-3\\4}$. $2\vec{a} + 3\vec{b} = \pmatrix{\alpha\\\beta\\0}$. Solve for the unknowns. 
 
-4.7.Given that $\vec{a}$ and $\vec{b}$ are parallel. $\vec{a} = (k-7)\hat{i} + (5j+1)\hat{j}$, $\vec{b} = -2\hat{i} + 8\hat{j}$. Solve for $k$. 
+4.7.Given that $\vec{a}$ and $\vec{b}$ are parallel. $\vec{a} = (k-7)\hat{i} + (5k+1)\hat{j}$, $\vec{b} = -2\hat{i} + 8\hat{j}$. Solve for $k$. 
 
 4.8.$5\pmatrix{\alpha\\3\\7\\1} - \pmatrix{-5\\\beta\\2\\-5} = \pmatrix{2\alpha\\3\beta\\\gamma\\2\delta} + 2\pmatrix{-1\\4\\6\\\delta}$. Solve for the unknowns.
 ---
