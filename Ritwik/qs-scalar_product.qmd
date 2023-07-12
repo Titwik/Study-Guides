@@ -1,0 +1,57 @@
+---
+title: "Scalar Product Questions"
+author: "Ritwik Anand"
+abstract-title: Summary
+abstract: A selection of questions for the study guide on the Scalar Product
+---
+
+*Before attempting these questions, it is highly recommended that you read [Guide: The Scalar Product](Scalar_Product2.qmd), as well as the [Guide: Introduction to Quadratic Equations](introtoquadratics.qmd). *
+
+## Questions {-}
+
+### 1 {-}
+
+Find the scalar product of $\vec{u}$ and $\vec{v}$.
+
+1.1. $\vec{u} = \begin{pmatrix}6\\3\\4\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}1\\-4\\2\end{pmatrix}$
+
+1.2. $\vec{u} = \begin{pmatrix}10\\-7\\4\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}3\\-5\\13\end{pmatrix}$
+
+1.3. $\vec{u}=2\mathbf{i}-\mathbf{k}$ and $\vec{v}=6\mathbf{i}-4\mathbf{j}+8\mathbf{k}$
+
+1.4. $\vec{u}= -\mathbf{j}+7\mathbf{k}$ and $\vec{v}=\mathbf2{i}+10\mathbf{k}$
+
+### 2 {-}
+
+Find the value(s) of $\lambda$ for which $\vec{u}$ and $\vec{v}$ are perpendicular
+
+2.1. $\vec{u} = \begin{pmatrix}2\\4\\6\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}1\\\lambda\\2\end{pmatrix}$
+
+2.2. $\vec{u} = \begin{pmatrix}0\\1\\\lambda\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}1\\2\\3\end{pmatrix}$
+
+2.3. $\vec{u} = \begin{pmatrix}9\\-2\\5\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}\lambda\\-\lambda\\6\end{pmatrix}$ 
+
+2.4. $\vec{u} = \begin{pmatrix}\lambda\\7\\1\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}\lambda\\\lambda\\5\end{pmatrix}$ 
+
+### 3 {-}
+
+Let $\vec{x} = \begin{pmatrix}\lambda\\\mu\\1\end{pmatrix}$. Find $\lambda$ and $\mu$ such that $\vec{x}$ is perpendicular to both $\vec{u}$ and $\vec{v}$.
+
+3.1. $\vec{u} = \begin{pmatrix}1\\1\\-3\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}5\\-2\\-1\end{pmatrix}$
+
+3.2. $\vec{u} = \begin{pmatrix}2\\3\\-3\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}1\\-6\\2\end{pmatrix}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
