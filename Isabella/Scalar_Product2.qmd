@@ -5,6 +5,11 @@ abstract-title: Summary
 abstract: Combining vectors is a crucial skill that appears a lot in mathematics. Calulcating the scalar product, interpreting it geometrically and being careful of certain special cases are all important steps in working with vectors. 
 ---
 
+```{r, setup, include = FALSE}
+library("webexercises")
+```
+
+
 *Before reading this guide, it is recommended that you read (Guide: Introduction to Vectors and Guide: Vector Addition and Scalar Multiplication, Guide: Sigma Notation).*
 
 ## What is the scalar product? {.unnumbered}
@@ -105,14 +110,14 @@ You've just seen one example showing that the scalar product is commutative. How
 Having seen the definition of the scalar product, you may now be wondering about the geometrical interpretation. You have a definition, but how does this relate to the vectors you're taking the scalar product of? Take two arbitrary vectors $\vec{u}$ and $\vec{v}$. Place their base at the same point. Call this base point A. Consider the plane formed by the tip of $\vec{u}$ (at point B) and formed at the tip of $\vec{v}$ (at point C). The points A,B,C form a plane. Now, let a be the length of $\vec{u}$, b be the length of $\vec{v}$ and c be the length of $\vec{v-u}$, like in the diagram below.
 
 ::: {.content-visible when-format="html"}
-![Geometrical interpretation of the Scalar Product. Figure 1 shows the vectors v and u and their difference.](./FiguresSP/Figure 1.pdf){#fig-1 width="20", height="20" fig-alt="Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a traingles. The second shows the same traingle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,$\\psi$ and x."}
+![Geometrical interpretation of the Scalar Product. Figure 1 shows the vectors v and u and their difference.](./FiguresSP/Figure 1.pdf){#fig-1 width="20", height="20" fig-alt="Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a triangles. The second shows the same traingle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,$\psi$ and x."}
 :::
 
 ::: {.content-hidden when-format="html"}
-![Geometrical interpretation of the Scalar Product. Figure 1 shows the vectors v and u and their difference.](./FiguresSP/Figure 1.pdf){#fig-1 fig-alt="Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a triangle. The second shows the same traingle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,$\\psi$ and x."}
+![Geometrical interpretation of the Scalar Product. Figure 1 shows the vectors v and u and their difference.](./FiguresSP/Figure1.pdf){#fig-1 fig-alt="Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a triangle. The second shows the same triangle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,$\psi$ and x."}
 :::
 
-Using trigonometry, the height of the triangle in figure 2 is $h=bsin(\psi)$. Looking at the diagram again, $l=bcos(\psi)$ and $$x=a-l=a-bcos(\psi)$$. Using Pythagoras's theorem, $$h^2+x^2=c^2$$ $$b^2sin^2(\psi)+(a-bcos(\psi))^2=c^2=|\vec{v}-\vec{u}|^2 (the length of \vec{v}-\vec{u})$$ Expanding out the brackets on the left hand side obtains $$b^2-2abcos(\psi)+a^2=|\vec{v}-\vec{u}|^2$$ Using property i) from above: $$|\vec{v}-\vec{u}|^2=(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})$$ Also, by distributivity and property i), $$(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})=\vec{v}\cdot\vec{v}-2\vec{u}\cdot\vec{v}+\vec{u}\cdot\vec{u} = |\vec{v}|^2-2\vec{u}\cdot\vec{v}+|\vec{u}|^2$$ Recall from above that $|\vec{u}|^2=a$ and $|\vec{v}|^2=b$, then $$b^2-2abcos(\psi)+a^2=b^2-2\vec{u}\cdot\vec{v}+a^2$$ Cancelling the terms $a^2$ and $b^2$, $$abcos(\psi)=\vec{u}\cdot\vec{v}$$ So, $$cos(\psi)=(\vec{u}\cdot\vec{v})/(ab)=(\vec{u}\cdot\vec{v})/(|\vec{u}||\vec{v}|)$$ So, in geometrical terms, the above derivation tells you that the inner product between two vectors is the product of their magnitudes multiplied by the angle between them.
+Using trigonometry, the height of the triangle in figure 2 is $h=bsin(\psi)$. Looking at the diagram again, $l=bcos(\psi)$ and $$x=a-l=a-bcos(\psi)$$. Using Pythagoras's theorem, $$h^2+x^2=c^2$$ $$b^2sin^2(\psi)+(a-bcos(\psi))^2=c^2=|\vec{v}-\vec{u}|^2 (the length of \vec{v}-\vec{u})$$ Expanding out the brackets on the left hand side obtains $$b^2-2abcos(\psi)+a^2=|\vec{v}-\vec{u}|^2$$ Using property i) from above: $$|\vec{v}-\vec{u}|^2=(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})$$ Also, by distributivity and property i), $$(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})=\vec{v}\cdot\vec{v}-2\vec{u}\cdot\vec{v}+\vec{u}\cdot\vec{u} = |\vec{v}|^2-2\vec{u}\cdot\vec{v}+|\vec{u}|^2$$ Recall from above that $|\vec{u}|^2=a$ and $|\vec{v}|^2=b$, then $$b^2-2abcos(\psi)+a^2=b^2-2\vec{u}\cdot\vec{v}+a^2$$ Cancelling the terms $a^2$ and $b^2$, $$abcos(\psi)=\vec{u}\cdot\vec{v}$$ So, $$cos(\psi)={\frac{(\vec{u}\cdot\vec{v})}{(ab)}}={\frac{(\vec{u}\cdot\vec{v})}{(|\vec{u}||\vec{v}|)}}$$ So, in geometrical terms, the above derivation tells you that the inner product between two vectors is the product of their magnitudes multiplied by the angle between them.
 
 
 ::: callout-note
@@ -164,9 +169,45 @@ iii) When either $\vec{u}$ or $\vec{v}$ is equal to $0$ (or both are), the dot p
 $$\vec{u}\cdot0=0\cdot\vec{v}=0$$
 iv) When $\vec{u}$ and $\vec{v}$ are perpendicular,  their scalar product is equal to $0$. This is because the angle between the two vectors is $90^\circ$ and as $cos(90)=0$,
 $$\vec{u}\cdot\vec{v}=|u||v|cos(90)=0$$.
-\
-\
-\
+
+## The scalar product of perpendicular vectors
+
+As mentioned in the above result, the scalar product of two perpendicular vectors is $0$. 
+Given two vectors, you can use this fact to test whether they are perpendicular or not. 
+
+::: {.callout-note appearance="simple"}
+## Example 9
+Take $\vec{u}=\begin{pmatrix}3\\3\\4\end{pmatrix}$ and $\vec{v}=\begin{pmatrix}1\\3\\-3\end{pmatrix}$. 
+Then,
+$$\vec{u}\cdot\vec{v}=\begin{pmatrix}3\\3\\4\end{pmatrix}\cdot\begin{pmatrix}1\\3\\-3\end{pmatrix}=(3\times1)+(3\times3)-(4\times3)=0$$
+So, $\vec{u}$ and $\vec{v}$ are indeed perpendicular. 
+:::
+
+::: {.callout-note appearance="simple"}
+## Example 10
+Let $\vec{u}=\mathbf{i}+2\mathbf{j}+\mathbf{k}$ and $\vec{v}=4\mathbf{i}-\mathbf{j}+\mathbf{k}$, then you can find a vector, $\vec{x}$ perpendicular to both $\vec{u}$ and $\vec{v}$ using the scalar product:
+$$\vec{u}\cdot\vec{x}=0$$
+$$\vec{v}\cdot\vec{x}=0$$
+Write $\vec{x}$ as $a\mathbf{i}+b\mathbf{j}+c\mathbf{k}$, then
+$$\vec{u}\cdot\vec{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=a+2b+c=0$$
+$$\vec{v}\cdot\vec{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=4a-b+c=0$$
+Now, we have a pair of simultaneous equations. 
+$$a+2b+c=0$$
+$$4a-b+c=0$$
+This system has an infinite number of solutions, so you may assume $a=1$ (Any other value would also work, and you could have chosen a value for $b$ or $c$ instead). 
+
+Taking the second from the first,
+$$-3+b=0$$
+So, $b=3$
+Finally, substituting back into the first of the original simultaneous equations, 
+$$1+2(3)+c=0$$
+$$c=-7$$
+So, $\vec{x}=1\mathbf{i}+3\mathbf{j}-7\mathbf{k}$
+
+You can check this by taking the scalar product:
+$\vec{u}\cdot\vec{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(1\times1)+(2\times3)+(1\times-7)=1+6-7=0$
+$\vec{v}\cdot\vec{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(4\times1)+(-1\times3)+(1\times-7)=4-3-1=0$
+:::
 
 
 ## Quick check problems {.unnumbered}
