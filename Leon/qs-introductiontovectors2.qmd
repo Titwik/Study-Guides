@@ -1,0 +1,94 @@
+---
+title: "Introduction to vectors: questions"
+author: "Zheng Chen"
+abstract-title: Summary
+abstract: A selection of questions for the study guide on introduction to vectors
+---
+
+*Before attempting these questions, it is highly recommended that you read [Guide: Introduction to vectors](IntroductionToVectors.qmd).*
+
+## Q1 {.unnumbered}
+
+Identify the following as either scalar or vector quantities.
+
+1.1. length, area, displacement
+
+1.2. velocity, pressure, power
+
+1.3. work, force, acceleration
+
+1.4. momentum, density, speed
+
+1.5. temperature, volume, energy
+
+
+## Q2 {.unnumbered}
+
+Find the magnitude of the following vectors.
+
+2.1. $\vec{A} = -\mathbf{i} + 3\mathbf{j}$
+
+2.2. $\vec{B} = 2\mathbf{i}+4\mathbf{j}+6\mathbf{k}$
+
+2.3. $\vec{C} = \mathbf{i}-\mathbf{j}+4\mathbf{k}$
+
+2.4. $\vec{D} = 5\mathbf{i}-2\mathbf{j}+\mathbf{k}$
+
+2.5. $\vec{E} = \begin{pmatrix}2\\-1\\4\end{pmatrix}$
+
+2.6. $\vec{F} = \begin{pmatrix}-3\\6\\2\end{pmatrix}$
+
+2.7. $\vec{G} = \begin{pmatrix}5\\1\\\sqrt{2}\end{pmatrix}$
+
+2.8. $\vec{H} = 6\mathbf{i}+2\mathbf{j}+2\mathbf{k}$
+
+2.9. $\vec{I} = -3\mathbf{i}+3\mathbf{j}-3\mathbf{k}$
+
+2.10. $\vec{J} = 2\mathbf{i}+4\mathbf{j}+4\mathbf{k}$
+
+2.11. $\vec{K} = 8\mathbf{i}-2\mathbf{j}+16\mathbf{k}$
+
+2.12. $\vec{L} = \begin{pmatrix}5\\-2\\14\end{pmatrix}$
+
+2.13. $\vec{M} = \begin{pmatrix}7\\2\\-1\end{pmatrix}$
+
+2.14. $\vec{N} = \begin{pmatrix}12\\9\\8\end{pmatrix}$
+
+
+## Q3 {.unnumbered}
+
+Find the unit vectors for the vectors in Q2
+
+3.1. $\vec{A} = -\mathbf{i} + 3\mathbf{j}$
+
+3.2. $\vec{B} = 2\mathbf{i}+4\mathbf{j}+6\mathbf{k}$
+
+3.3. $\vec{C} = \mathbf{i}-\mathbf{j}+4\mathbf{k}$
+
+3.4. $\vec{D} = 5\mathbf{i}-2\mathbf{j}+\mathbf{k}$
+
+3.5. $\vec{E} = \begin{pmatrix}2\\-1\\4\end{pmatrix}$
+
+3.6. $\vec{F} = \begin{pmatrix}-3\\6\\2\end{pmatrix}$
+
+3.7. $\vec{G} = \begin{pmatrix}5\\1\\\sqrt{2}\end{pmatrix}$
+
+3.8. $\vec{H} = 6\mathbf{i}+2\mathbf{j}+2\mathbf{k}$
+
+3.9. $\vec{I} = -3\mathbf{i}+3\mathbf{j}-3\mathbf{k}$
+
+3.10. $\vec{J} = 2\mathbf{i}+4\mathbf{j}+4\mathbf{k}$
+
+3.11. $\vec{K} = 8\mathbf{i}-2\mathbf{j}+16\mathbf{k}$
+
+3.12. $\vec{L} = \begin{pmatrix}5\\-2\\14\end{pmatrix}$
+
+3.13. $\vec{M} = \begin{pmatrix}7\\2\\-1\end{pmatrix}$
+
+3.14. $\vec{N} = \begin{pmatrix}12\\9\\8\end{pmatrix}$
+
+---
+
+[Please click this link to find the answers.](as-introductiontovectors.qmd)
+
+---
