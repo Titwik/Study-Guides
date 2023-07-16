@@ -25,7 +25,7 @@ Find the scalar product of $\vec{u}$ and $\vec{v}$.
 
 1.6. $\vec{u} = -3\mathbf{i} + 10\mathbf{j} - 8\mathbf{k}$ and $\vec{v} = \mathbf{i} - 12\mathbf{j} + 9\mathbf{k}$
 
-1.7. $\vec{u} = 17\mathbf{j} + 23\mathbf{k}$ and $\vec{v} = 6\mathbf{i} - 23\mathbf{j} - 18\mathbf{k}$
+1.7. $\vec{u} = 17\mathbf{j} + 23\mathbf{k}$ and $\vec{v} = 6\mathbf{i} - 23\mathbf{j} - 8\mathbf{k}$
 
 1.8. $\vec{u} = \mathbf{i}$ and $\vec{v} = \mathbf{j}$. 
 
@@ -33,7 +33,7 @@ What can you say about the result of (1.8.)? Can you deduce similar conclusions 
 
 ### 2 {-}
 
-Find the value(s) of $\lambda$ for which $\vec{u}$ and $\vec{v}$ are perpendicular
+Find the value(s) of $\lambda$ for which $\vec{u}$ and $\vec{v}$ are perpendicular.
 
 2.1. $\vec{u} = \begin{pmatrix}2\\4\\7\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}1\\\lambda\\-2\end{pmatrix}$
 
@@ -49,12 +49,12 @@ Find the value(s) of $\lambda$ for which $\vec{u}$ and $\vec{v}$ are perpendicul
 
 2.7. $\vec{u} = \begin{pmatrix}-7\\4\\2\lambda\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}2\lambda\\1\\6\lambda\end{pmatrix}$
 
-2.8. $\vec{u} = \begin{pmatrix}-25\\-1\lambda^2\\-2\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}3\lambda\\-11\\7\end{pmatrix}$
+2.8. $\vec{u} = \begin{pmatrix}-25\\-\lambda^2\\-2\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}3\lambda\\-11\\7\end{pmatrix}$
 
 
 ## 3 {-}
 
-Find the angle in between $\vec{u}$ and $\vec{v}$ (Hint: Use the Geometric Definition of the Scalar Product)
+Find the angle $\theta$ in between $\vec{u}$ and $\vec{v}$ to 1 decimal points. (Hint: Use the Geometric Definition of the Scalar Product)
 
 3.1. $\vec{u} = \begin{pmatrix}-5\\2\\-3\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}2\\-2\\11\end{pmatrix}$
 
@@ -82,6 +82,9 @@ Find $\vec{x}$ such that it is perpendicular to both $\vec{u}$ and $\vec{v}$.
 
 4.3. $\vec{u} = \begin{pmatrix}-8\\1\\-4\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}-1\\-5\\7\end{pmatrix}$
 
+4.4. $\vec{u} = \begin{pmatrix}6\\3\\4\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}1\\4\\2\end{pmatrix}$
+
+4.5. $\vec{u} = \begin{pmatrix}10\\-7\\4\end{pmatrix}$ and $\vec{v} = \begin{pmatrix}3\\-5\\13\end{pmatrix}$
 
 
 
