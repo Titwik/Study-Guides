@@ -14,21 +14,21 @@ library("webexercises")
 
 ## What is the scalar product? {.unnumbered}
 
-When working with vectors, you want to be able to combine them. The **scalar product**, also known as the **dot product**, gives you one way of doing this.
+When working with vectors, you want to be able to combine them. The **scalar product**, also known as the **dot product**, gives you one way of doing this. It is useful in finding out how much two vectors point in the same direction and has applications in applied mathematics and physics.  
 
 This guide will give both the algebraic and geometric definition of the scalar product, display certain properties of the operation and bring awareness to special cases that arise.
 
 ::: callout-note
 ## Algebraic definition of the scalar product
 
-Let $\vec{u} = \begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}$ and $\vec{v} =\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix}$, then the **scalar product**, denoted $\vec{u} \cdot \vec{v}$, is defined as follows:
+Let $\mathbf{u}= \begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix}$, then the **scalar product**, denoted $\mathbf{u} \cdot \mathbf{v}$, is defined as follows:
 
-$$\vec{u} \cdot \vec{v} = \begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}\cdot\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix} = u_1v_1 + u_2v_2 + ... + u_nv_n $$
+$$\mathbf{u} \cdot \mathbf{v} = \begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}\cdot\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix} = u_1v_1 + u_2v_2 + ... + u_nv_n $$
 
-This may also be written, using sigma notation, as $$\vec{u} \cdot \vec{v} = \sum^n_{i=1}\,u_i v_i$$
+This may also be written, using sigma notation, as $$\mathbf{u} \cdot \mathbf{v} = \sum^n_{i=1}\,u_i v_i$$
 :::
 
-As the name suggests, the scalar product of two vectors is a scalar. It is important to be able to calculate the scalar product of vectors of all lengths.
+As the name suggests, the scalar product of two vectors is a scalar. It is important to be able to calculate the scalar product of vectors of all lengths (number of entries, inlcuding $0$).
 
 ::: callout-warning
 ## WARNING
@@ -39,19 +39,19 @@ Vectors must have the same length to have a scalar product.
 ::: {.callout-note appearance="simple"}
 ## Example 1
 
-Take $\vec{u}=\begin{pmatrix}3\\5\\1\end{pmatrix}$ and $\vec{v} =\begin{pmatrix}2\\7\\2\end{pmatrix}$, then the scalar product is $$\begin{pmatrix}3\\ 5 \\1\end{pmatrix}\cdot\begin{pmatrix}2\\ 7 \\2\end{pmatrix} = (3\times2) + (5\times7) + (1\times2) = 6+35+2 = 43$$
+Take $\mathbf{u}=\begin{pmatrix}3\\5\\1\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}2\\7\\2\end{pmatrix}$, then the scalar product is $$\begin{pmatrix}3\\ 5 \\1\end{pmatrix}\cdot\begin{pmatrix}2\\ 7 \\2\end{pmatrix} = (3\times2) + (5\times7) + (1\times2) = 6+35+2 = 43$$
 :::
 
 ::: {.callout-note appearance="simple"}
 ## Example 2
 
-Take $\vec{u}=\begin{pmatrix}10\\13\\3\\2\end{pmatrix}$ and $\vec{v} =\begin{pmatrix}5\\1\\20\\1\end{pmatrix}$, then the scalar product is $$\begin{pmatrix}10\\ 13 \\3\\2\end{pmatrix}\cdot\begin{pmatrix}5\\ 1 \\20\\1\end{pmatrix} = 50+13+60+2 = 125 $$
+Take $\mathbf{u}=\begin{pmatrix}10\\13\\3\\2\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}5\\1\\20\\1\end{pmatrix}$, then the scalar product is $$\begin{pmatrix}10\\ 13 \\3\\2\end{pmatrix}\cdot\begin{pmatrix}5\\ 1 \\20\\1\end{pmatrix} = (10\times5)+(13\times1)+(3\times20)+(2\times1)=50+13+60+2 = 125 $$
 :::
 
 ::: {.callout-note appearance="simple"}
 ## Example 3
 
-Take $\vec{u}=\begin{pmatrix}-1\\7\\1\end{pmatrix}$ and $\vec{v} =\begin{pmatrix}-1\\-1\\2\end{pmatrix}$, then the scalar product is $$\begin{pmatrix}-1\\ 7 \\1\end{pmatrix}\cdot\begin{pmatrix}-1\\ -1 \\2\end{pmatrix} = (-1\times-1) + (7\times-1) + (1\times2) = 1-7+2 = -4$$
+Take $\mathbf{u}=\begin{pmatrix}-1\\7\\1\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}-1\\-1\\2\end{pmatrix}$, then the scalar product is $$\begin{pmatrix}-1\\ 7 \\1\end{pmatrix}\cdot\begin{pmatrix}-1\\ -1 \\2\end{pmatrix} = (-1\times-1) + (7\times-1) + (1\times2) = 1-7+2 = -4$$
 :::
 
 You can also take the scalar product of vectors in cartesian form.
@@ -59,7 +59,7 @@ You can also take the scalar product of vectors in cartesian form.
 ::: {.callout-note appearance="simple"}
 ## Example 4
 
-Take $\vec{u}=4\mathbf{i}+2\mathbf{j}+\mathbf{k}$ and $\vec{v}=\mathbf{i}-\mathbf{j}+3\mathbf{k}$, then $$\vec{u}\cdot\vec{v}=(4\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}-\mathbf{j}+3\mathbf{k})=(4\times1)+(2\times-1)+(1\times3)=5$$  
+Take $\mathbf{u}=4\mathbf{i}+2\mathbf{j}+\mathbf{k}$ and $\mathbf{v}=\mathbf{i}-\mathbf{j}+3\mathbf{k}$, then $$\mathbf{u}\cdot\mathbf{v}=(4\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}-\mathbf{j}+3\mathbf{k})=(4\times1)+(2\times-1)+(1\times3)=5$$  
 :::
 ::: {.callout-note}
 ## Definition of Commutative, Distributive
@@ -75,55 +75,54 @@ The scalar product has some nice properties:\
 
 i)  The scalar product of a vector with itself is the square of its magnitude:
 
-$$\vec{u}\cdot\vec{u}=|\vec{u}|^2$$\
+$$\mathbf{u}\cdot\mathbf{u}=|\mathbf{u}|^2$$\
 
-ii) Multiplying a vector, $\vec{u}$ by a scalar, c, multiplies its scalar product with another vector, $\vec{v}$ by the same scalar, c:
+ii) Multiplying a vector, $\mathbf{u}$ by a scalar, c, multiplies its scalar product with another vector, $\mathbf{v}$ by the same scalar, c:
 
-$$((c\vec{u})\cdot\vec{v}=c(\vec{u}\cdot\vec{v})$$
+$$((c\mathbf{u})\cdot\mathbf{v}=c(\mathbf{u}\cdot\mathbf{v})$$
 
-iii) The scalar product of a vector, $\vec{u}$ with the zero vector, $\vec{0}$ is 0: $$\vec{u}\cdot\vec{0}=0$$
+iii) The scalar product of a vector, $\mathbf{u}$ with the zero vector, $\mathbf{0}$ is 0: $$\mathbf{u}\cdot\mathbf{0}=0$$
 
-iv) The scalar product is **commutative**: $$\vec{u}\cdot\vec{v}=\vec{v}\cdot\vec{u}$$
+iv) The scalar product is **commutative**: $$\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}$$
 
-v)  The scalar product is **distributive**: $$\vec{u}\cdot (\vec{v}+\vec{w}) = \vec{u}\cdot\vec{v}+\vec{u}\cdot\vec{w}$$
+v)  The scalar product is **distributive**: $$\mathbf{u}\cdot (\mathbf{v}+\mathbf{w}) = \mathbf{u}\cdot\mathbf{v}+\mathbf{u}\cdot\mathbf{w}$$
 
 
 ::: {.callout-note appearance="simple"}
 ## Example 5
 
-Take $\vec{u}=\begin{pmatrix}3\\5\\1\end{pmatrix}$ and $\vec{v} =\begin{pmatrix}2\\7\\2\end{pmatrix}$, as in example 1. Then you know $$\vec{u}\cdot\vec{v}= 43 $$. Also, $$\vec{v}\cdot\vec{u}=\begin{pmatrix}2\\7\\2\end{pmatrix}\cdot\begin{pmatrix}3\\5\\1\end{pmatrix}=(2\times3)+(7\times5)+(2\times1)=6+35+2=43$$ So, $\vec{u}\cdot\vec{v}=\vec{v}\cdot\vec{u}$, i.e commutative.
+Take $\mathbf{u}=\begin{pmatrix}3\\5\\1\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}2\\7\\2\end{pmatrix}$, as in example 1. Then you know $$\mathbf{u}\cdot\mathbf{v}= 43 $$. Also, $$\mathbf{v}\cdot\mathbf{u=\begin{pmatrix}2\\7\\2\end{pmatrix}\cdot\begin{pmatrix}3\\5\\1\end{pmatrix}=(2\times3)+(7\times5)+(2\times1)=6+35+2=43$$ So, $\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}$, i.e commutative.
 :::
 
 ::: {.callout-note appearance="simple"}
 ## Example 6
 
-Take $\vec{u}=\begin{pmatrix}14\\2\\100\end{pmatrix}$, then $$\vec{u}\cdot\vec{u}=14^2+2^2+100^2=10200$$ and, the magnitude is $$|\vec{u}|=\sqrt{14^2+2^2+100^2}=\sqrt{10200}$$ and so, $$|\vec{u}|^2=\vec{u}\cdot\vec{u}$$
+Take $\mathbf{u}=\begin{pmatrix}14\\2\\100\end{pmatrix}$, then $$\mathbf{u}\cdot\mathbf{u}=14^2+2^2+100^2=10200$$ and, the magnitude is $$|\mathbf{u}|=\sqrt{14^2+2^2+100^2}=\sqrt{10200}$$ and so, $$|\mathbf{u}|^2=\mathbf{u}\cdot\mathbf{u}$$
 :::
 
 ## Proof of commutativity
 
-You've just seen one example showing that the scalar product is commutative. How about for all vectors? Let $\vec{u} = \begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}$ and $\vec{v} =\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix}$, then $$\vec{u} \cdot \vec{v} = \begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}\cdot\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix} = u_1v_1 + u_2v_2 + ... + u_nv_n = v_1u_1 + v_2u_2+...+v_nu_n$$, since multiplication is commutative (i.e $u_1v_1=v_1u_1$). And, $$\vec{v} \cdot \vec{u}=\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix}\cdot\begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}=v_1u_1 + v_2u_2+...+v_nu_n=\vec{u}\cdot\vec{v}$$ Hence, the scalar product is commutative.
+You've just seen one example showing that the scalar product is commutative. How about for all vectors? Let $\mathbf{u} = \begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix}$, then $$\mathbf{u} \cdot \mathbf{v} = \begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}\cdot\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix} = u_1v_1 + u_2v_2 + ... + u_nv_n = v_1u_1 + v_2u_2+...+v_nu_n$$, since multiplication is commutative (i.e $u_1v_1=v_1u_1$). And, $$\mathbf{v} \cdot \mathbf{u}=\begin{pmatrix}v_1\\ \vdots \\v_n\end{pmatrix}\cdot\begin{pmatrix}u_1\\ \vdots \\u_n\end{pmatrix}=v_1u_1 + v_2u_2+...+v_nu_n=\mathbf{u}\cdot\mathbf{v}$$ Hence, the scalar product is commutative.
 
 
 ## The Geometrical Interpretation
 
-Having seen the definition of the scalar product, you may now be wondering about the geometrical interpretation. You have a definition, but how does this relate to the vectors you're taking the scalar product of? Take two arbitrary vectors $\vec{u}$ and $\vec{v}$. Place their base at the same point. Call this base point A. Consider the plane formed by the tip of $\vec{u}$ (at point B) and formed at the tip of $\vec{v}$ (at point C). The points A,B,C form a plane. Now, let a be the length of $\vec{u}$, b be the length of $\vec{v}$ and c be the length of $\vec{v-u}$, like in the diagram below.
+Having seen the definition of the scalar product, you may now be wondering about the geometrical interpretation. You have a definition, but how does this relate to the vectors you're taking the scalar product of? Take two arbitrary vectors $\mathbf{u}$ and $\mathbf{v}$. Place their base at the same point. Call this base point A. Consider the plane formed by the tip of $\mathbf{u}$ (at point B) and formed at the tip of $\mathbf{v}$ (at point C). The points A,B,C form a plane. Now, let a be the length of $\mathbf{u}$, b be the length of $\mathbf{v}$ and c be the length of $\mathbf{v-u}$, like in the diagram below.
 
 ::: {.content-visible when-format="html"}
-![Geometrical interpretation of the Scalar Product. Figure 1 shows the vectors v and u and their difference.](./FiguresSP/Figure 1.pdf){#fig-1 width="20", height="20" fig-alt="Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a triangles. The second shows the same traingle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,$\psi$ and x."}
+![Geometrical interpretation of the Scalar Product, showing the vectors v and u and their difference and a triangle with the corresponding lengths.](../FiguresSP/Figure 1.pdf){#fig-4 width="150%" fig-alt="Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a triangles. The second shows the same traingle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,$\psi$ and x."}
 :::
-
 ::: {.content-hidden when-format="html"}
-![Geometrical interpretation of the Scalar Product. Figure 1 shows the vectors v and u and their difference.](./FiguresSP/Figure1.pdf){#fig-1 fig-alt="Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a triangle. The second shows the same triangle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,$\psi$ and x."}
+![Geometrical interpretation of the Scalar Product, showing the vectors v and u and their difference and a triangle with the corresponding lengths.](./FiguresSP/Figure1.pdf){#fig-1 fig-alt="Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a triangle. The second shows the same triangle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,$\psi$ and x."}
 :::
 
-Using trigonometry, the height of the triangle in figure 2 is $h=bsin(\psi)$. Looking at the diagram again, $l=bcos(\psi)$ and $$x=a-l=a-bcos(\psi)$$. Using Pythagoras's theorem, $$h^2+x^2=c^2$$ $$b^2sin^2(\psi)+(a-bcos(\psi))^2=c^2=|\vec{v}-\vec{u}|^2 (the length of \vec{v}-\vec{u})$$ Expanding out the brackets on the left hand side obtains $$b^2-2abcos(\psi)+a^2=|\vec{v}-\vec{u}|^2$$ Using property i) from above: $$|\vec{v}-\vec{u}|^2=(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})$$ Also, by distributivity and property i), $$(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})=\vec{v}\cdot\vec{v}-2\vec{u}\cdot\vec{v}+\vec{u}\cdot\vec{u} = |\vec{v}|^2-2\vec{u}\cdot\vec{v}+|\vec{u}|^2$$ Recall from above that $|\vec{u}|^2=a$ and $|\vec{v}|^2=b$, then $$b^2-2abcos(\psi)+a^2=b^2-2\vec{u}\cdot\vec{v}+a^2$$ Cancelling the terms $a^2$ and $b^2$, $$abcos(\psi)=\vec{u}\cdot\vec{v}$$ So, $$cos(\psi)={\frac{(\vec{u}\cdot\vec{v})}{(ab)}}={\frac{(\vec{u}\cdot\vec{v})}{(|\vec{u}||\vec{v}|)}}$$ So, in geometrical terms, the above derivation tells you that the inner product between two vectors is the product of their magnitudes multiplied by the angle between them.
+Using trigonometry, the height of the triangle in figure 2 is $h=bsin(\psi)$. Looking at the diagram again, $l=bcos(\psi)$ and $$x=a-l=a-bcos(\psi)$$. Using Pythagoras's theorem, $$h^2+x^2=c^2$$ $$b^2sin^2(\psi)+(a-bcos(\psi))^2=c^2=|\mathbf{v}-\mathbf{u}|^2 (the length of \mathbf{v}-\mathbf{u})$$ Expanding out the brackets on the left hand side obtains $$b^2-2abcos(\psi)+a^2=|\mathbf{v}-\mathbf{u}|^2$$ Using property i) from above: $$|\mathbf{v}-\mathbf{u}|^2=(\mathbf{v}-\mathbf{u})\cdot(\mathbf{v}-\mathbf{u})$$ Also, by distributivity and property i), $$(\mathbf{v}-\mathbf{u})\cdot(\mathbf{v}-\mathbf{u})=\mathbf{v}\cdot\mathbf{v}-2\mathbf{u}\cdot\mathbf{v}+\mathbf{u}\cdot\mathbf{u} = |\mathbf{v}|^2-2\mathbf{u}\cdot\mathbf{v}+|\mathbf{u}|^2$$ Recall from above that $|\mathbf{u}|^2=a$ and $|\mathbf{v}|^2=b$, then $$b^2-2abcos(\psi)+a^2=b^2-2\mathbf{u}\cdot\mathbf{v}+a^2$$ Cancelling the terms $a^2$ and $b^2$, $$abcos(\psi)=\mathbf{u}\cdot\mathbf{v}$$ So, $$cos(\psi)={\frac{(\mathbf{u}\cdot\mathbf{v})}{(ab)}}={\frac{(\mathbf{u}\cdot\mathbf{v})}{(|\mathbf{u}||\mathbf{v}|)}}$$ So, in geometrical terms, the above derivation tells you that the inner product between two vectors is the product of their magnitudes multiplied by the angle between them.
 
 
 ::: callout-note
 ## Geometric defintion of the Scalar Product
 
-The above derivation gives another way of defining the scalar product: $$\vec{u}\cdot\vec{v}=|\vec{u}||\vec{v}|cos(\psi)$$
+The above derivation gives another way of defining the scalar product: $$\mathbf{u}\cdot\mathbf{v}=|\mathbf{u}||\mathbf{v}|cos(\psi)$$
 :::
 
 ::: {.callout-warning} 
@@ -142,13 +141,13 @@ Two vectors are said to be **anti-parallel** if they are parallel, in nature, bu
 ::: {.callout-note appearance="simple"}
 ## Example 7
 
-Take $\vec{u}=\begin{pmatrix}0\\2\\0\end{pmatrix}$ and $\\vec{v} =\begin{pmatrix}3\\5\\4\end{pmatrix}$, and say the angle between them is $60^\circ$. Then, using the above definition, $$\vec{u}\cdot\vec{v}=|u||v|cos(\psi)=\sqrt{0^2+2^2+0^2}\sqrt{3^2+5^2+4^2}cos60=\frac{2+5\sqrt2}{2}$$
+Take $\mathbf{u}=\begin{pmatrix}0\\2\\0\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}3\\5\\4\end{pmatrix}$, and say the angle between them is $60^\circ$. Then, using the above definition, $$\mathbf{u}\cdot\mathbf{v}=|\mathbf{u}||\mathbf{v}|cos(\psi)=\sqrt{0^2+2^2+0^2}\sqrt{3^2+5^2+4^2}cos(60)=\frac{2+5\sqrt2}{2}$$
 :::
 
 ::: {.callout-note appearance="simple"}
 ## Example 8
 
-Take $\vec{u}=\begin{pmatrix}0\\2\\0\end{pmatrix}$ and $\\vec{v} =\begin{pmatrix}3\\5\\4\end{pmatrix}$, and say the angle between them is $120^\circ$. Then, $$\vec{u}\cdot\vec{v}=|u||v|cos(\psi)=\sqrt{0^2+2^2+0^2}\sqrt{3^2+5^2+4^2}cos120=-\frac{2+5\sqrt2}{2}$$
+Take $\mathbf{u}=\begin{pmatrix}0\\2\\0\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}3\\5\\4\end{pmatrix}$, and say the angle between them is $120^\circ$. Then, $$\mathbf{u}\cdot\mathbf{v}=|u||v|cos(\psi)=\sqrt{0^2+2^2+0^2}\sqrt{3^2+5^2+4^2}cos(120)=-\frac{2+5\sqrt2}{2}$$
 :::
 
 ::: {.callout-important}
@@ -161,14 +160,14 @@ The scalar product can be a negative number! All this means is that the angle is
 ## Special Cases...
 
 There are a few specific cases that you need to be careful with when dealing with the scalar product. These are:\
-i) When $\vec{u}$ and $\vec{v}$ are parallel. In this case, the angle between the vectors is 0. So, the dot product is the magnitudes multiplied, i.e.
-$$\vec{u}\cdot\vec{v}=|u||v|$$
-ii) When $\vec{u}$ and $\vec{v}$ are anti-parallel, then the dot product is negative the magnitudes multiplied, i.e.
-$$\vec{u}\cdot\vec{v}=-|u||v|$$
-iii) When either $\vec{u}$ or $\vec{v}$ is equal to $0$ (or both are), the dot product is equal to $0$, i.e.
-$$\vec{u}\cdot0=0\cdot\vec{v}=0$$
-iv) When $\vec{u}$ and $\vec{v}$ are perpendicular,  their scalar product is equal to $0$. This is because the angle between the two vectors is $90^\circ$ and as $cos(90)=0$,
-$$\vec{u}\cdot\vec{v}=|u||v|cos(90)=0$$.
+i) When $\mathbf{u}$ and $\mathbf{v}$ are parallel. In this case, the angle between the vectors is 0. So, the dot product is the magnitudes multiplied, i.e.
+$$\mathbf{u}\cdot\mathbf{v}=|\mathbf{u}||\mathbf{v}|$$
+ii) When $\mathbf{u}$ and $\mathbf{v}$ are anti-parallel, then the dot product is negative the magnitudes multiplied, i.e.
+$$\mathbf{u}\cdot\mathbf{v}=-|\mathbf{u}||\mathbf{v}|$$
+iii) When either $\mathbf{u}$ or $\mathbf{v}$ is equal to $0$ (or both are), the dot product is equal to $0$, i.e.
+$$\mathbf{u}\cdot\mathbf{0}=\mathbf{0}\cdot\mathbf{v}=0$$
+iv) Two vectors $\mathbf{u}$ and $\mathbf{v}$ are perpendicular,  if and only if their scalar product is equal to $0$. This is because the angle between the two vectors is $90^\circ$ and as $cos(90)=0$,
+$$\mathbf{u}\cdot\mathbf{v}=|\mathbf{u}||\mathbf{v}|cos(90)=0$$.
 
 ## The scalar product of perpendicular vectors
 
@@ -177,20 +176,20 @@ Given two vectors, you can use this fact to test whether they are perpendicular 
 
 ::: {.callout-note appearance="simple"}
 ## Example 9
-Take $\vec{u}=\begin{pmatrix}3\\3\\4\end{pmatrix}$ and $\vec{v}=\begin{pmatrix}1\\3\\-3\end{pmatrix}$. 
+Take $\mathbf{u}=\begin{pmatrix}3\\3\\4\end{pmatrix}$ and $\mathbf{v}=\begin{pmatrix}1\\3\\-3\end{pmatrix}$. 
 Then,
-$$\vec{u}\cdot\vec{v}=\begin{pmatrix}3\\3\\4\end{pmatrix}\cdot\begin{pmatrix}1\\3\\-3\end{pmatrix}=(3\times1)+(3\times3)-(4\times3)=0$$
-So, $\vec{u}$ and $\vec{v}$ are indeed perpendicular. 
+$$\mathbf{u}\cdot\mathbf{v}=\begin{pmatrix}3\\3\\4\end{pmatrix}\cdot\begin{pmatrix}1\\3\\-3\end{pmatrix}=(3\times1)+(3\times3)-(4\times3)=0$$
+So, $\mathbf{u}$ and $\mathbf{v}$ are indeed perpendicular. 
 :::
 
 ::: {.callout-note appearance="simple"}
 ## Example 10
-Let $\vec{u}=\mathbf{i}+2\mathbf{j}+\mathbf{k}$ and $\vec{v}=4\mathbf{i}-\mathbf{j}+\mathbf{k}$, then you can find a vector, $\vec{x}$ perpendicular to both $\vec{u}$ and $\vec{v}$ using the scalar product:
-$$\vec{u}\cdot\vec{x}=0$$
-$$\vec{v}\cdot\vec{x}=0$$
-Write $\vec{x}$ as $a\mathbf{i}+b\mathbf{j}+c\mathbf{k}$, then
-$$\vec{u}\cdot\vec{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=a+2b+c=0$$
-$$\vec{v}\cdot\vec{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=4a-b+c=0$$
+Let $\mathbf{u}=\mathbf{i}+2\mathbf{j}+\mathbf{k}$ and $\mathbf{v}=4\mathbf{i}-\mathbf{j}+\mathbf{k}$, then you can find a vector, $\mathbf{x}$ perpendicular to both $\mathbf{u}$ and $\mathbf{v}$ using the scalar product:
+$$\mathbf{u}\cdot\mathbf{x}=0$$
+$$\mathbf{v}\cdot\mathbf{x}=0$$
+Write $\mathbf{x}$ as $a\mathbf{i}+b\mathbf{j}+c\mathbf{k}$, then
+$$\mathbf{u}\cdot\mathbf{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=a+2b+c=0$$
+$$\mathbf{v}\cdot\mathbf{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=4a-b+c=0$$
 Now, we have a pair of simultaneous equations. 
 $$a+2b+c=0$$
 $$4a-b+c=0$$
@@ -202,10 +201,10 @@ So, $b=3$
 Finally, substituting back into the first of the original simultaneous equations, 
 $$1+2(3)+c=0$$
 $$c=-7$$
-So, $\vec{x}=1\mathbf{i}+3\mathbf{j}-7\mathbf{k}$
+So, $\mathbf{x}=1\mathbf{i}+3\mathbf{j}-7\mathbf{k}$
 
 You can check this by taking the scalar product:
-$\vec{u}\cdot\vec{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(1\times1)+(2\times3)+(1\times-7)=1+6-7=0$
+$\mathbf{u}\cdot\mathbf{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(1\times1)+(2\times3)+(1\times-7)=1+6-7=0$
 $\vec{v}\cdot\vec{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(4\times1)+(-1\times3)+(1\times-7)=4-3-1=0$
 :::
 
@@ -218,30 +217,36 @@ $\vec{v}\cdot\vec{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathb
 <!-- add facility to check answers at end rather than one at a time -->
 
 ::: {.webex-check .webex-box}
-1.  Using the algebraic definition, what is the scalar product of the vectors $\vec{u}=\begin{pmatrix}1\\2\\-1\end{pmatrix}$ and $\vec{v}=\begin{pmatrix}2\\10\\15\end{pmatrix}$?
+1.  Using the algebraic definition, what is the scalar product of the vectors $\mathbf{u}=\begin{pmatrix}1\\2\\-1\end{pmatrix}$ and $\mathbf{v}=\begin{pmatrix}2\\10\\15\end{pmatrix}$?
 
 Answer: The scalar product is equal to `r fitb(7)`.
 
-2. What is the scalar product of $\vec{u}\begin{pmatrix}5\\7\\-13\end{pmatrix}$ with itself? 
+2. What is the scalar product of $\mathbf{u}\begin{pmatrix}5\\7\\-13\end{pmatrix}$ with itself? 
 
 Answer: The scalar product is equal to the square of the magnitude of the vector. So, the scalar product is equal to `r fitb(243)`.
 
-3. What is the scalar product of $\vec{v}=3\mathbf{i}+\mathbf{j}-\mathbf{k}$ and $\vec{u}=4\mathbf{i}+5\mathbf{j}+\mathbf{k}$?
+3. What is the scalar product of $\mathbf{v}=3\mathbf{i}+\mathbf{j}-\mathbf{k}$ and $\mathbf{u}=4\mathbf{i}+5\mathbf{j}+\mathbf{k}$?
 
 Answer: The scalar product is equal to `r fitb(16)`.
 
-4. Using the geometric definition, what is the scalar product of $\vec{u}=\begin{pmatrix}2\\3\\-1\end{pmatrix}$ and $\vec{v}=\begin{pmatrix}2\\2\\4\end{pmatrix}$, with an angle of $60^\circ$ between them?
+4. Using the geometric definition, what is the scalar product of $\mathbf{u}=\begin{pmatrix}2\\3\\-1\end{pmatrix}$ and $\mathbf{v}=\begin{pmatrix}2\\2\\4\end{pmatrix}$, with an angle of $60^\circ$ between them?
 
 Answer: The scalar product is equal to `r fitb(9.17)`.
 :::
 :::
 
 ::: {.content-hidden when-format="html"}
-1.  Using the algebraic definition, what is the scalar product of the vectors $\vec{u}=\begin{pmatrix}1\\2\\-1\end{pmatrix}$ and $\vec{v}=\begin{pmatrix}2\\10\\15\end{pmatrix}$?
+1.  Using the algebraic definition, what is the scalar product of the vectors $\mathbf{u}=\begin{pmatrix}1\\2\\-1\end{pmatrix}$ and $\mathbf{v}=\begin{pmatrix}2\\10\\15\end{pmatrix}$?
 
-2. What is the scalar product of $\vec{u}\begin{pmatrix}5\\7\\-13\end{pmatrix}$ with itself? 
+2. What is the scalar product of $\mathbf{u}\begin{pmatrix}5\\7\\-13\end{pmatrix}$ with itself? 
 
-3. What is the scalar product of $\vec{v}=3\mathbf{i}+\mathbf{j}-\mathbf{k}$ and $\vec{u}=4\mathbf{i}+5\mathbf{j}+\mathbf{k}$?
+3. What is the scalar product of $\mathbf{v}=3\mathbf{i}+\mathbf{j}-\mathbf{k}$ and $\mathbf{u}=4\mathbf{i}+5\mathbf{j}+\mathbf{k}$?
 
-4. Using the geometric definition, what is the scalar product of $\vec{u}=\begin{pmatrix}2\\3\\-1\end{pmatrix}$ and $\vec{v}=\begin{pmatrix}2\\2\\4\end{pmatrix}$, with an angle of $60^\circ$ between them?
+4. Using the geometric definition, what is the scalar product of $\mathbf{u}=\begin{pmatrix}2\\3\\-1\end{pmatrix}$ and $\mathbf{v}=\begin{pmatrix}2\\2\\4\end{pmatrix}$, with an angle of $60^\circ$ between them?
 :::
+
+
+[For more questions on the subject, please go to Questions: Scalar Product.]
+
+
+

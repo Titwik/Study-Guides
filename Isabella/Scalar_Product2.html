@@ -229,8 +229,8 @@ Example 6
 <section id="the-geometrical-interpretation" class="level2">
 <h2 class="anchored" data-anchor-id="the-geometrical-interpretation">The Geometrical Interpretation</h2>
 <p>Having seen the definition of the scalar product, you may now be wondering about the geometrical interpretation. You have a definition, but how does this relate to the vectors you’re taking the scalar product of? Take two arbitrary vectors <span class="math inline">\(\vec{u}\)</span> and <span class="math inline">\(\vec{v}\)</span>. Place their base at the same point. Call this base point A. Consider the plane formed by the tip of <span class="math inline">\(\vec{u}\)</span> (at point B) and formed at the tip of <span class="math inline">\(\vec{v}\)</span> (at point C). The points A,B,C form a plane. Now, let a be the length of <span class="math inline">\(\vec{u}\)</span>, b be the length of <span class="math inline">\(\vec{v}\)</span> and c be the length of <span class="math inline">\(\vec{v-u}\)</span>, like in the diagram below.</p>
-<p><embed src="./FiguresSP/Figure%201.pdf" class="img-fluid">{#fig-1 width=“20”, height=“20” fig-alt=“Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a traingles. The second shows the same traingle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,<span class="math inline">\(\\psi\)</span> and x.”}</p>
-<p>Using trigonometry, the height of the triangle in figure 2 is <span class="math inline">\(h=bsin(\psi)\)</span>. Looking at the diagram again, <span class="math inline">\(l=bcos(\psi)\)</span> and <span class="math display">\[x=a-l=a-bcos(\psi)\]</span>. Using Pythagoras’s theorem, <span class="math display">\[h^2+x^2=c^2\]</span> <span class="math display">\[b^2sin^2(\psi)+(a-bcos(\psi))^2=c^2=|\vec{v}-\vec{u}|^2 (the length of \vec{v}-\vec{u})\]</span> Expanding out the brackets on the left hand side obtains <span class="math display">\[b^2-2abcos(\psi)+a^2=|\vec{v}-\vec{u}|^2\]</span> Using property i) from above: <span class="math display">\[|\vec{v}-\vec{u}|^2=(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})\]</span> Also, by distributivity and property i), <span class="math display">\[(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})=\vec{v}\cdot\vec{v}-2\vec{u}\cdot\vec{v}+\vec{u}\cdot\vec{u} = |\vec{v}|^2-2\vec{u}\cdot\vec{v}+|\vec{u}|^2\]</span> Recall from above that <span class="math inline">\(|\vec{u}|^2=a\)</span> and <span class="math inline">\(|\vec{v}|^2=b\)</span>, then <span class="math display">\[b^2-2abcos(\psi)+a^2=b^2-2\vec{u}\cdot\vec{v}+a^2\]</span> Cancelling the terms <span class="math inline">\(a^2\)</span> and <span class="math inline">\(b^2\)</span>, <span class="math display">\[abcos(\psi)=\vec{u}\cdot\vec{v}\]</span> So, <span class="math display">\[cos(\psi)=(\vec{u}\cdot\vec{v})/(ab)=(\vec{u}\cdot\vec{v})/(|\vec{u}||\vec{v}|)\]</span> So, in geometrical terms, the above derivation tells you that the inner product between two vectors is the product of their magnitudes multiplied by the angle between them.</p>
+<p><embed src="./FiguresSP/Figure%201.pdf" class="img-fluid">{#fig-1 width=“20”, height=“20” fig-alt=“Two triangles side by side on separate diagrams. The first shows the vectors u and v. u is horizontal and v start from the same place as u and is above. v-u is labelled and is the line joining the 2 vectors lines, making it a triangles. The second shows the same traingle, but instead labels the sides as the corresponding lengths, a,b,c and also labels h,<span class="math inline">\(\psi\)</span> and x.”}</p>
+<p>Using trigonometry, the height of the triangle in figure 2 is <span class="math inline">\(h=bsin(\psi)\)</span>. Looking at the diagram again, <span class="math inline">\(l=bcos(\psi)\)</span> and <span class="math display">\[x=a-l=a-bcos(\psi)\]</span>. Using Pythagoras’s theorem, <span class="math display">\[h^2+x^2=c^2\]</span> <span class="math display">\[b^2sin^2(\psi)+(a-bcos(\psi))^2=c^2=|\vec{v}-\vec{u}|^2 (the length of \vec{v}-\vec{u})\]</span> Expanding out the brackets on the left hand side obtains <span class="math display">\[b^2-2abcos(\psi)+a^2=|\vec{v}-\vec{u}|^2\]</span> Using property i) from above: <span class="math display">\[|\vec{v}-\vec{u}|^2=(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})\]</span> Also, by distributivity and property i), <span class="math display">\[(\vec{v}-\vec{u})\cdot(\vec{v}-\vec{u})=\vec{v}\cdot\vec{v}-2\vec{u}\cdot\vec{v}+\vec{u}\cdot\vec{u} = |\vec{v}|^2-2\vec{u}\cdot\vec{v}+|\vec{u}|^2\]</span> Recall from above that <span class="math inline">\(|\vec{u}|^2=a\)</span> and <span class="math inline">\(|\vec{v}|^2=b\)</span>, then <span class="math display">\[b^2-2abcos(\psi)+a^2=b^2-2\vec{u}\cdot\vec{v}+a^2\]</span> Cancelling the terms <span class="math inline">\(a^2\)</span> and <span class="math inline">\(b^2\)</span>, <span class="math display">\[abcos(\psi)=\vec{u}\cdot\vec{v}\]</span> So, <span class="math display">\[cos(\psi)={\frac{(\vec{u}\cdot\vec{v})}{(ab)}}={\frac{(\vec{u}\cdot\vec{v})}{(|\vec{u}||\vec{v}|)}}\]</span> So, in geometrical terms, the above derivation tells you that the inner product between two vectors is the product of their magnitudes multiplied by the angle between them.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -314,10 +314,39 @@ IMPORTANT
 <section id="special-cases" class="level2">
 <h2 class="anchored" data-anchor-id="special-cases">Special Cases…</h2>
 <p>There are a few specific cases that you need to be careful with when dealing with the scalar product. These are:<br>
-i) When <span class="math inline">\(\vec{u}\)</span> and <span class="math inline">\(\vec{v}\)</span> are parallel. In this case, the angle between the vectors is 0. So, the dot product is the magnitudes multiplied, i.e. <span class="math display">\[\vec{u}\cdot\vec{v}=|u||v|\]</span> ii) When <span class="math inline">\(\vec{u}\)</span> and <span class="math inline">\(\vec{v}\)</span> are anti-parallel, then the dot product is negative the magnitudes multiplied, i.e. <span class="math display">\[\vec{u}\cdot\vec{v}=-|u||v|\]</span> iii) When either <span class="math inline">\(\vec{u}\)</span> or <span class="math inline">\(\vec{v}\)</span> is equal to <span class="math inline">\(0\)</span> (or both are), the dot product is equal to <span class="math inline">\(0\)</span>, i.e. <span class="math display">\[\vec{u}\cdot0=0\cdot\vec{v}=0\]</span> iv) When <span class="math inline">\(\vec{u}\)</span> and <span class="math inline">\(\vec{v}\)</span> are perpendicular, their scalar product is equal to <span class="math inline">\(0\)</span>. This is because the angle between the two vectors is <span class="math inline">\(90^\circ\)</span> and as <span class="math inline">\(cos(90)=0\)</span>, <span class="math display">\[\vec{u}\cdot\vec{v}=|u||v|cos(90)=0\]</span>.<br>
-<br>
-<br>
-</p>
+i) When <span class="math inline">\(\vec{u}\)</span> and <span class="math inline">\(\vec{v}\)</span> are parallel. In this case, the angle between the vectors is 0. So, the dot product is the magnitudes multiplied, i.e. <span class="math display">\[\vec{u}\cdot\vec{v}=|u||v|\]</span> ii) When <span class="math inline">\(\vec{u}\)</span> and <span class="math inline">\(\vec{v}\)</span> are anti-parallel, then the dot product is negative the magnitudes multiplied, i.e. <span class="math display">\[\vec{u}\cdot\vec{v}=-|u||v|\]</span> iii) When either <span class="math inline">\(\vec{u}\)</span> or <span class="math inline">\(\vec{v}\)</span> is equal to <span class="math inline">\(0\)</span> (or both are), the dot product is equal to <span class="math inline">\(0\)</span>, i.e. <span class="math display">\[\vec{u}\cdot0=0\cdot\vec{v}=0\]</span> iv) When <span class="math inline">\(\vec{u}\)</span> and <span class="math inline">\(\vec{v}\)</span> are perpendicular, their scalar product is equal to <span class="math inline">\(0\)</span>. This is because the angle between the two vectors is <span class="math inline">\(90^\circ\)</span> and as <span class="math inline">\(cos(90)=0\)</span>, <span class="math display">\[\vec{u}\cdot\vec{v}=|u||v|cos(90)=0\]</span>.</p>
+</section>
+<section id="the-scalar-product-of-perpendicular-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="the-scalar-product-of-perpendicular-vectors">The scalar product of perpendicular vectors</h2>
+<p>As mentioned in the above result, the scalar product of two perpendicular vectors is <span class="math inline">\(0\)</span>. Given two vectors, you can use this fact to test whether they are perpendicular or not.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example 9
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Take <span class="math inline">\(\vec{u}=\begin{pmatrix}3\\3\\4\end{pmatrix}\)</span> and <span class="math inline">\(\vec{v}=\begin{pmatrix}1\\3\\-3\end{pmatrix}\)</span>. Then, <span class="math display">\[\vec{u}\cdot\vec{v}=\begin{pmatrix}3\\3\\4\end{pmatrix}\cdot\begin{pmatrix}1\\3\\-3\end{pmatrix}=(3\times1)+(3\times3)-(4\times3)=0\]</span> So, <span class="math inline">\(\vec{u}\)</span> and <span class="math inline">\(\vec{v}\)</span> are indeed perpendicular.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example 10
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\(\vec{u}=\mathbf{i}+2\mathbf{j}+\mathbf{k}\)</span> and <span class="math inline">\(\vec{v}=4\mathbf{i}-\mathbf{j}+\mathbf{k}\)</span>, then you can find a vector, <span class="math inline">\(\vec{x}\)</span> perpendicular to both <span class="math inline">\(\vec{u}\)</span> and <span class="math inline">\(\vec{v}\)</span> using the scalar product: <span class="math display">\[\vec{u}\cdot\vec{x}=0\]</span> <span class="math display">\[\vec{v}\cdot\vec{x}=0\]</span> Write <span class="math inline">\(\vec{x}\)</span> as <span class="math inline">\(a\mathbf{i}+b\mathbf{j}+c\mathbf{k}\)</span>, then <span class="math display">\[\vec{u}\cdot\vec{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=a+2b+c=0\]</span> <span class="math display">\[\vec{v}\cdot\vec{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=4a-b+c=0\]</span> Now, we have a pair of simultaneous equations. <span class="math display">\[a+2b+c=0\]</span> <span class="math display">\[4a-b+c=0\]</span> This system has an infinite number of solutions, so you may assume <span class="math inline">\(a=1\)</span> (Any other value would also work, and you could have chosen a value for <span class="math inline">\(b\)</span> or <span class="math inline">\(c\)</span> instead).</p>
+<p>Taking the second from the first, <span class="math display">\[-3+b=0\]</span> So, <span class="math inline">\(b=3\)</span> Finally, substituting back into the first of the original simultaneous equations, <span class="math display">\[1+2(3)+c=0\]</span> <span class="math display">\[c=-7\]</span> So, <span class="math inline">\(\vec{x}=1\mathbf{i}+3\mathbf{j}-7\mathbf{k}\)</span></p>
+<p>You can check this by taking the scalar product: <span class="math inline">\(\vec{u}\cdot\vec{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(1\times1)+(2\times3)+(1\times-7)=1+6-7=0\)</span> <span class="math inline">\(\vec{v}\cdot\vec{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(4\times1)+(-1\times3)+(1\times-7)=4-3-1=0\)</span></p>
+</div>
+</div>
 </section>
 <section id="quick-check-problems" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="quick-check-problems">Quick check problems</h2>
@@ -327,19 +356,19 @@ i) When <span class="math inline">\(\vec{u}\)</span> and <span class="math inlin
 <ol type="1">
 <li>Using the algebraic definition, what is the scalar product of the vectors <span class="math inline">\(\vec{u}=\begin{pmatrix}1\\2\\-1\end{pmatrix}\)</span> and <span class="math inline">\(\vec{v}=\begin{pmatrix}2\\10\\15\end{pmatrix}\)</span>?</li>
 </ol>
-<p>Answer: The scalar product is equal to <code>r fitb(7)</code>.</p>
+<p>Answer: The scalar product is equal to <input class="webex-solveme nospaces" size="1" data-answer="[&quot;7&quot;]">.</p>
 <ol start="2" type="1">
 <li>What is the scalar product of <span class="math inline">\(\vec{u}\begin{pmatrix}5\\7\\-13\end{pmatrix}\)</span> with itself?</li>
 </ol>
-<p>Answer: The scalar product is equal to the square of the magnitude of the vector. So, the scalar product is equal to <code>r fitb(243)</code>.</p>
+<p>Answer: The scalar product is equal to the square of the magnitude of the vector. So, the scalar product is equal to <input class="webex-solveme nospaces" size="3" data-answer="[&quot;243&quot;]">.</p>
 <ol start="3" type="1">
 <li>What is the scalar product of <span class="math inline">\(\vec{v}=3\mathbf{i}+\mathbf{j}-\mathbf{k}\)</span> and <span class="math inline">\(\vec{u}=4\mathbf{i}+5\mathbf{j}+\mathbf{k}\)</span>?</li>
 </ol>
-<p>Answer: The scalar product is equal to <code>r fitb(16)</code>.</p>
+<p>Answer: The scalar product is equal to <input class="webex-solveme nospaces" size="2" data-answer="[&quot;16&quot;]">.</p>
 <ol start="4" type="1">
 <li>Using the geometric definition, what is the scalar product of <span class="math inline">\(\vec{u}=\begin{pmatrix}2\\3\\-1\end{pmatrix}\)</span> and <span class="math inline">\(\vec{v}=\begin{pmatrix}2\\2\\4\end{pmatrix}\)</span>, with an angle of <span class="math inline">\(60^\circ\)</span> between them?</li>
 </ol>
-<p>Answer: The scalar product is equal to <code>r fitb(9.17)</code>.</p>
+<p>Answer: The scalar product is equal to <input class="webex-solveme nospaces" size="4" data-answer="[&quot;9.17&quot;]">.</p>
 </div>
 </section>
 
