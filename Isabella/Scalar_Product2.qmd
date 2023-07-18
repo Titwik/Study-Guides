@@ -91,7 +91,7 @@ v)  The scalar product is **distributive**: $$\mathbf{u}\cdot (\mathbf{v}+\mathb
 ::: {.callout-note appearance="simple"}
 ## Example 5
 
-Take $\mathbf{u}=\begin{pmatrix}3\\5\\1\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}2\\7\\2\end{pmatrix}$, as in example 1. Then you know $$\mathbf{u}\cdot\mathbf{v}= 43 $$. Also, $$\mathbf{v}\cdot\mathbf{u=\begin{pmatrix}2\\7\\2\end{pmatrix}\cdot\begin{pmatrix}3\\5\\1\end{pmatrix}=(2\times3)+(7\times5)+(2\times1)=6+35+2=43$$ So, $\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}$, i.e commutative.
+Take $\mathbf{u}=\begin{pmatrix}3\\5\\1\end{pmatrix}$ and $\mathbf{v} =\begin{pmatrix}2\\7\\2\end{pmatrix}$, as in example 1. Then you know $$\mathbf{u}\cdot\mathbf{v}= 43 $$. Also, $$\mathbf{v}\cdot\mathbf{u}=\begin{pmatrix}2\\7\\2\end{pmatrix}\cdot\begin{pmatrix}3\\5\\1\end{pmatrix}=(2\times3)+(7\times5)+(2\times1)=6+35+2=43$$ So, $\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}$, i.e commutative.
 :::
 
 ::: {.callout-note appearance="simple"}
@@ -205,7 +205,7 @@ So, $\mathbf{x}=1\mathbf{i}+3\mathbf{j}-7\mathbf{k}$
 
 You can check this by taking the scalar product:
 $\mathbf{u}\cdot\mathbf{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(1\times1)+(2\times3)+(1\times-7)=1+6-7=0$
-$\vec{v}\cdot\vec{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(4\times1)+(-1\times3)+(1\times-7)=4-3-1=0$
+$\mathbf{v}\cdot\mathbf{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(4\times1)+(-1\times3)+(1\times-7)=4-3-1=0$
 :::
 
 
