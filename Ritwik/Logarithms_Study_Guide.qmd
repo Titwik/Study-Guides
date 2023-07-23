@@ -73,7 +73,7 @@ The results above can be proved using the definition of the logarithm.
 
 ## Laws of Logarithms
 
-There are several rules of logarithms that allows us to expand, condense and solve logarithmic equations. For this section, assume that $a > 0$.
+There are several rules of logarithms that allows us to expand, condense and solve logarithmic equations. For this section, assume that $a > 1$.
 
 ::: {#product-rule-link .callout-note}
 ## Law 1: Product Rule
@@ -173,7 +173,7 @@ To learn about the natural logarithm, you first need to know of **Euler's number
 
 ## Euler's Number
 
-**Euler's number**, denoted *e* is a irrational mathematical constant that is approximately equal to 2.71828. 
+**Euler's number**, denoted *e*, is an irrational mathematical constant that is approximately equal to 2.71828. 
 
 :::
 
@@ -218,13 +218,11 @@ Let's say that you've been given the equation $e^x = 5$, and you need to solve f
 $$\ln(e^x) = \ln(5)$$ Now, using [Law 3](#law-3-link), you can write the equation as  $$x\ln(e) = \ln(5)$$
 From here, dividing both sides by $\ln(e)$ results in $$x = \frac{\ln(5)}{\ln(e)}$$
 
-However, you know from the [definition](#definition-1-link) of the logarithm that $\ln(e) = \log_e(e)$. Finally, as $e^1 = 1$, you can show that $\ln(e) = \log_e(e) = 1$.
+However, you know from the [definition](#definition-1-link) of the logarithm that $\ln(e) = \log_e(e)$. Finally, $\log_e(e) = 1$ by the [Inverse of a Logarithm](#law-6-link) rule.
 
 Therefore, $x = \ln(5)$.
 
 :::
-
-[Example 5](#example-5-link) shows you that $\ln(e) = 1$. This can be generalised for logarithms of any base.
 
 # Changing Bases of Logarithms
 
@@ -260,7 +258,7 @@ You are given $\log_2(e^5)$ and asked to change the base to $e$.
 Using the [change of base rule](#change-base-rule), 
 
 $$\log_2(e^5) = \frac{\ln(e^5)}{\ln(2)}$$
-Using [Law 6](#law-6-link), you can work out that $\ln(e^5) = 5$. Therefore, the equation above simplifies to $$\log_2(e^5) = \frac{5}{\ln(2)}$$
+Using the [Inverse of a Logarithm](#law-6-link) rule, you can work out that $\ln(e^5) = 5$. Therefore, the equation above simplifies to $$\log_2(e^5) = \frac{5}{\ln(2)}$$
 
 :::
 
@@ -270,15 +268,15 @@ Using [Law 6](#law-6-link), you can work out that $\ln(e^5) = 5$. Therefore, the
 
 Given the equation $3^x = 7^{x + 1}$, to solve for $x$;
 
-First, you can take the logarithm of both sides of the equation, $$\log(3^x) = \log(7^{x+1})$$
+First, you can take the logarithm of both sides of the equation with base $a > 1$, $$\log_a(3^x) = \log_a(7^{x+1})$$
 
-Next, using Law 3, you can bring the powers of the arguments outside of the logarithm as follows, $$x\log(3) = (x+1)\log(7)$$
+Next, using Law 3, you can bring the powers of the arguments outside of the logarithm as follows, $$x\log_a(3) = (x+1)\log_a(7)$$
 
-After that, expand the right side of the equation to obtain $$x\log(3) = x\log(7) + \log(7)$$
+After that, expand the right side of the equation to obtain $$x\log_a(3) = x\log_a(7) + \log_a(7)$$
 
-Subtracting $x\log(7)$ from both sides of the equation gives you $$x\log(3) - x\log(7) = \log(7)$$ From which you can pull a factor of $x$ out on the left, giving you $$x \cdot (\log(3) - \log(7)) = \log(7)$$
+Subtracting $x\log_a(7)$ from both sides of the equation gives you $$x\log_a(3) - x\log_a(7) = \log_a(7)$$ From which you can pull a factor of $x$ out on the left, giving you $$x \cdot (\log_a(3) - \log_a(7)) = \log_a(7)$$
 
-Finally, dividing both sides by $(\log(3) - \log(7))$, you conclude that $$x = \frac{\log(7)}{\log(3) - \log(7)}$$
+Finally, dividing both sides by $(\log_a(3) - \log_a(7))$, you conclude that $$x = \frac{\log_a(7)}{\log_a(3) - \log_a(7)}$$
 
 :::
 
@@ -288,14 +286,14 @@ Finally, dividing both sides by $(\log(3) - \log(7))$, you conclude that $$x = \
 
 Given the equation $5^{2x} + 7(5^x) - 30 = 0$, you are asked to solve for $x$.
 
-Start by letting $y = 5^x$. Then, you can rewrite the equation given as $(5^x)^2 + 7(5^x) - 30 = 0$ using [**laws of indices**](introtolawsofindices.qmd), which is the same as writing $$y^2 +7y - 30 = 0$$
+Start by letting $y = 5^x$. Then, you can rewrite the equation given as $(5^x)^2 + 7(5^x) - 30 = 0$ using [laws of indices](introtolawsofindices.qmd), which is the same as writing $$y^2 +7y - 30 = 0$$
 
-Recognizing that this is a quadratic equation, you can use the quadratic formula, or otherwise, to show that $$y = -10 \quad \text{or} \quad y = 3$$
+Recognizing that this is a [quadratic equation](introtoquadratics.qmd), you can use the quadratic formula, or otherwise, to show that $$y = -10 \quad \text{or} \quad y = 3$$
 
-As $y = 5^x$, this means that $5^x = -10$ or $5^x = 3$. By taking the logarithm of both sides, you can show that $$x\log(5) = \log(-10) \quad \text{or} \quad x\log(5) = 3$$ 
+As $y = 5^x$, this means that $5^x = -10$ or $5^x = 3$. By taking the logarithm of both sides, you can show that $$x\log_a(5) = \log_a(-10) \quad \text{or} \quad x\log_a(5) = 3$$ 
 
-Recall that the logarithm of a negative number is not defined, so $x\log(5) = 3$ is the only viable solution. 
-Therefore, you can conclude that $$x = \frac{3}{\log(5)}$$
+Recall that the logarithm of a negative number is not defined, so $x\log_a(5) = 3$ is the only viable solution. 
+Therefore, you can conclude that $$x = \frac{3}{\log_a(5)}$$
 
 :::
 
@@ -328,15 +326,13 @@ Answer: `r mcq(c(4, answer = 3, 2, 1))`
 
 4. Let $a > 1$. Which of the following is true for all positive numbers of $x$ and $y$?
 
-(a) $\log_a\left(\frac{2x}{3y^2}\right) = \log_a(2x) \cdot \log(3y^2)$ `r torf(FALSE)` 
+(a) $\log_a\left(\frac{2x}{3y^2}\right) = \log_a(2x) \cdot \log_a(3y^2)$ `r torf(FALSE)` 
 
 (b) $\log_a\left(\frac{2x}{3y^2}\right) = 2\log_a(x) - 3\log_a(y^2)$ `r torf(FALSE)`
 
 (c) $\log_a\left(\frac{2x}{3y^2}\right) = \log_a(2x) - \log_a(3y^2)$ `r torf(TRUE)`
 
 (d) $\log_a\left(\frac{2x}{3y^2}\right) = \frac{2}{3}\log_a\left(\frac{x}{y^2}\right)$ `r torf(FALSE)`
-
-
 
 :::
 
@@ -355,6 +351,8 @@ Answer: `r mcq(c(4, answer = 3, 2, 1))`
 
 (b) $\log_3(-9)$? 
 (c) $\log_{1234}(12.34)$? 
+
+4. Let $a > 1$. Rewrite $\log_a\left(\frac{2x}{3y^2}\right)$ as $m\log_a(2x) + n\log_a(3y^2)$ where $m$ and $n$ are constants. What are the values of $m$ and $n$?
 
 :::
 
