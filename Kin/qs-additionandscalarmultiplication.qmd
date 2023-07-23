@@ -1,69 +1,70 @@
 ---
 title: "Addition and scalar multiplication: questions"
-author: "Kin Wang Pang"
+author: "Kin Wang Pang, Renee Knapp"
 abstract-title: Summary
 abstract: A selection of questions for the study guide on addition and scalar multiplication.
 
 ---
 
 *Before attempting these questions, it is highly recommended that you read [Guide: Addition and scalar multiplication](additionandscalarmultiplication.qmd).*
+<!--2 hyperlinks: line9, 70-->
 
 ## Q1 {-}
 
 Answer the following questions.
 
-1.1. $\vec{a} = 4\hat{i} + 5\hat{j} + 7\hat{k}$, $\vec{b} = 8\hat{i} + 2\hat{j} + 4\hat{k}$. Find $\vec{a} + \vec{b}$.
+1.1. If $\mathbf{a} = 4\mathbf{i} + 5\mathbf{j} + 7\mathbf{k}$ and $\mathbf{b} = 8\mathbf{i} + 2\mathbf{j} + 4\mathbf{k}$, find $\mathbf{a} + \mathbf{b}$.
 
-1.2. $\vec{a} = 0\hat{i} + 3\hat{j} + 4\hat{k}$, $\vec{b} = 2\hat{i} + 0\hat{j} + 5\hat{k}$. Find $\vec{a} + \vec{b}$.
+1.2. If $\mathbf{a} = 0\mathbf{i} + 3\mathbf{j} + 4\mathbf{k}$ and $\mathbf{b} = 2\mathbf{i} + 0\mathbf{j} + 5\mathbf{k}$, find $\mathbf{a} + \mathbf{b}$.
 
-1.3. $\vec{a} = -2\hat{i}  + 6\hat{k}$, $\vec{b} = -4\hat{i} + 11\hat{j} -8\hat{k}$. Find $\vec{a} - \vec{b}$.
+1.3. If $\mathbf{a} = -2\mathbf{i}  + 6\mathbf{k}$ and $\mathbf{b} = -4\mathbf{i} + 11\mathbf{j} -8\mathbf{k}$, find $\mathbf{a} - \mathbf{b}$.
 
-1.4. $\vec{a} = 4\hat{i} + 12\hat{j} -7\hat{k}$, $\vec{b} = 3\hat{i} -3\hat{j} -2\hat{k}$. $\vec{c} = 11\hat{i} -4\hat{j} +9\hat{k}$ Find $\vec{a} - (\vec{b} + \vec{c})$.
+1.4. If $\mathbf{a} = 4\mathbf{i} + 12\mathbf{j} -7\mathbf{k}$, $\mathbf{b} = 3\mathbf{i} -3\mathbf{j} -2\mathbf{k}$ and $\mathbf{c} = 11\mathbf{i} -4\mathbf{j} +9\mathbf{k}$, find $\mathbf{a} - (\mathbf{b} + \mathbf{c})$.
 
 ## Q2 {-}
 
 Solve the following in terms of $\alpha$, $\beta$ and $\gamma$.
 
-2.1. $\vec{a} = \pmatrix{\alpha \\2\beta}$, $\vec{b} = \pmatrix{3\alpha \\5\beta}$. Find $\vec{a} + \vec{b}$.
+2.1. If $\mathbf{a} = \begin{pmatrix}\alpha \\2\beta\end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix}3\alpha \\5\beta\end{pmatrix}$, find $\mathbf{a} + \mathbf{b}$.
 
-2.2. $\vec{a} = \pmatrix{5 \\3\beta\\5\gamma}$, $\vec{b} = \pmatrix{-2\\2\alpha\\6\gamma}$. Find $\vec{a} - \vec{b}$.
+2.2. If $\mathbf{a} = \begin{pmatrix}5 \\3\beta\\5\gamma\end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix}-2\\2\alpha\\6\gamma\end{pmatrix}$, find $\mathbf{a} - \mathbf{b}$.
 
-2.3. $\vec{a} = \pmatrix{2\alpha \\3\beta\\4\gamma}$, $\vec{b} = \pmatrix{-2\alpha\\\beta\\0}$, $\vec{c} = \pmatrix{0\\4\beta\\4\gamma}$. Find $\vec{a} + \vec{b} - \vec{c}$.
+2.3. If $\mathbf{a} = \begin{pmatrix}2\alpha \\3\beta\\4\gamma\end{pmatrix}$, $\mathbf{b} = \begin{pmatrix}-2\alpha\\\beta\\0\end{pmatrix}$ and  $\mathbf{c} = \begin{pmatrix}0\\4\beta\\4\gamma\end{pmatrix}$, find $\mathbf{a} + \mathbf{b} - \mathbf{c}$.
 
-2.4. $\vec{a} = \pmatrix{2\alpha}$. What is $\vec{a} + 0$?
+2.4. If $\mathbf{a} = \begin{pmatrix}2\alpha\end{pmatrix}$, What is $\mathbf{a} + 0$?
 
 ## Q3 {-}
 
 Answer the following questions.
 
-3.1. $\vec{u} = 5\hat{j} + 6\hat{k}$. Find $3\vec{u}$.
+3.1. If $\mathbf{u} = 5\mathbf{j} + 6\mathbf{k}$. find $3\mathbf{u}$.
 
-3.2. $\vec{v} = \pmatrix{0\\-3\\7}$. Find $-6\vec{v}$.
+3.2. If $\mathbf{v} = \begin{pmatrix}0\\-3\\7\end{pmatrix}$, find $-6\mathbf{v}$.
 
-3.3. $\vec{u} = \pmatrix{0\\5\\6}$ and $\vec{v}$ is the same is above. Find $4\vec{v} - 3\vec{u}$.
+3.3. If $\mathbf{u} = \begin{pmatrix}0\\5\\6\end{pmatrix}$ and $\mathbf{v} = \begin{pmatrix}0\\-3\\7\end{pmatrix}$, find $4\mathbf{v} - 3\mathbf{u}$.
 
-3.4. $\vec{w} = \pmatrix{2\\3\\-4}$. Find $-2\vec{w} - (4\vec{u} -2\vec{v})$.
+3.4. If $\mathbf{u} = \begin{pmatrix}0\\5\\6\end{pmatrix}$, $\mathbf{v} = \begin{pmatrix}0\\-3\\7\end{pmatrix}$ and $\mathbf{w} = \begin{pmatrix}2\\3\\-4\end{pmatrix}$, find $-2\mathbf{w} - (4\mathbf{u} -2\mathbf{v})$.
 
 ## Q4 {-}
 
 Answer the following questions.
 
-4.1.$A = (3,4,5)$. $B = (-2,5,7)$. Find $\vec{AB}$.
+4.1. If $A = (3,4,5)$. $B = (-2,5,7)$, find $\overrightarrow{AB}$.
 
-4.2.$A = (2,5,7)$, $B = (6,11,7)$. $C = (0,1,2)$. Find $\vec{AB} - \vec{AC}$.
+4.2. If $A = (2,5,7)$, $B = (6,11,7)$ and $C = (0,1,2)$, find $\overrightarrow{AB} - \overrightarrow{AC}$.
 
-4.3.$A = (2,9)$, $B = (12,4)$, $C = (4k,3k)$. If $\vec{AB}$ and $\vec{BC}$ are parallel, find $m$.
+4.3. If $A = (2,9)$, $B = (12,4)$, $C = (4k,3k)$ and $\overrightarrow{AB}$ and $\overrightarrow{BC}$ are parallel, find $k$.
 
-4.4.$\vec{AB} = \pmatrix{6,7,-2}$. $B = (1,5,-9)$. Find the coordinate of $A$.
+4.4. If $\overrightarrow{AB} = \begin{pmatrix}6,7,-2\end{pmatrix}$ and $B = (1,5,9)$, find the coordinates of $A$.
 
 
-4.5.$\vec{a} = 2\hat{i} + 3\hat{j}$. $\vec{b} = 3\hat{i} -5\hat{j}.$ Find $13\hat{i} + -9\hat{j}$ in terms of $\vec{a}$ and $\vec{b}$.
+4.5. If $\mathbf{a} = 2\mathbf{i} + 3\mathbf{j}$ and $\mathbf{b} = 3\mathbf{i} -5\mathbf{j}$, find $13\mathbf{i} + -9\mathbf{j}$ in terms of $\mathbf{a}$ and $\mathbf{b}$.
 
-4.6.$\vec{a} = \pmatrix{3\\5\\\gamma}$, $\vec{b} = \pmatrix{-1\\-3\\4}$. $2\vec{a} + 3\vec{b} = \pmatrix{\alpha\\\beta\\0}$. Solve for the unknowns. 
+4.6. If $\mathbf{a} = \begin{pmatrix}3\\5\\\gamma\end{pmatrix}$, $\mathbf{b} = \begin{pmatrix}-1\\-3\\4\end{pmatrix}$ and $2\mathbf{a} + 3\mathbf{b} = \begin{pmatrix}\alpha\\\beta\\0\end{pmatrix}$, solve for the unknowns. 
 
-4.7.Given that $\vec{a}$ and $\vec{b}$ are parallel. $\vec{a} = (k-7)\hat{i} + (5k+1)\hat{j}$, $\vec{b} = -2\hat{i} + 8\hat{j}$. Solve for $k$. 
+4.7.Given that $\mathbf{a}$ and $\mathbf{b}$ are parallel. If $\mathbf{a} = (k-7)\mathbf{i} + (5k+1)\mathbf{j}$ and $\mathbf{b} = -2\mathbf{i} + 8\mathbf{j}$, find $k$. 
 
-4.8.$5\pmatrix{\alpha\\3\\7\\1} - \pmatrix{-5\\\beta\\2\\-5} = \pmatrix{2\alpha\\3\beta\\\gamma\\2\delta} + 2\pmatrix{-1\\4\\6\\\delta}$. Solve for the unknowns.
+4.8. If $5\begin{pmatrix}\alpha\\3\\7\\1\end{pmatrix} - \begin{pmatrix}-5\\\beta\\2\\-5\end{pmatrix} = \begin{pmatrix}2\alpha\\3\beta\\\gamma\\2\delta\end{pmatrix} + 2\begin{pmatrix}-1\\4\\6\\\delta\end{pmatrix}$, solve for the unknowns.
 ---
 
 [Please click this link to find the answers.](as-additionandscalarmultiplication.qmd)
