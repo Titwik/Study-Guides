@@ -15,10 +15,7 @@ library("webexercises")
 ## What is the scalar product? {.unnumbered}
 
 When working with vectors, you want to be able to combine them in order to solve vector-related problems. The **scalar product** (named as such since the result is a scalar), also known as the **dot product** (due to the symbol for the operation), gives you one way of doing this. The scalar product can tell you how much two vectors are aligned and can be used to find the angle between them.\
-It also has applications in applied mathematics and physics. **Work done** is an important concept in physics and is defined as the amount of energy transferred by an object by an external force when it is moved over a certain distance. 
-When the force is constant and in the same direction as the movement of the object, the equation is: $W=|\mathbf{F}||\mathbf{d}|$, that is work done is equal to force times distance. However, if the force is being applied at an angle, such as with a wagon being pulled along by a rope, then you need the component of the force acting in the direction of the motion. The scalar product lets you do this and hence appears in the equation for work done at an angle (see later in the guide for more information).
-
-
+It also has applications in applied mathematics and physics.
 
 This guide will give both the algebraic and geometric definition of the scalar product, display certain properties of the operation and bring awareness to special cases that arise.
 
@@ -193,58 +190,6 @@ $$\mathbf{u}\cdot\mathbf{v}=\begin{pmatrix}2\\1\\\lambda\end{pmatrix}\cdot\begin
 As $\mathbf{u}$ and $\mathbf{v}$ are perpendicular, the scalar product is $0$. So,
 $$16+\lambda=0$$
 Hence, $\lambda=-16$
-:::
-
-::: {.callout-note appearance="simple"}
-## Example 11
-Let $\mathbf{u}=\mathbf{i}+2\mathbf{j}+\mathbf{k}$ and $\mathbf{v}=4\mathbf{i}-\mathbf{j}+\mathbf{k}$, then you can find a vector, $\mathbf{x}$ perpendicular to both $\mathbf{u}$ and $\mathbf{v}$ using the scalar product:
-$$\mathbf{u}\cdot\mathbf{x}=0$$
-$$\mathbf{v}\cdot\mathbf{x}=0$$
-Write $\mathbf{x}$ as $a\mathbf{i}+b\mathbf{j}+c\mathbf{k}$, then
-$$\mathbf{u}\cdot\mathbf{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=a+2b+c=0$$
-$$\mathbf{v}\cdot\mathbf{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot({a\mathbf{i}+b\mathbf{j}+c\mathbf{k}})=4a-b+c=0$$
-Now, we have a pair of simultaneous equations. 
-$$a+2b+c=0$$
-$$4a-b+c=0$$
-This system has an infinite number of solutions, so you may assume $a=1$ (Any other value would also work, and you could have chosen a value for $b$ or $c$ instead). 
-
-Taking the second from the first,
-$$-3+b=0$$
-So, $b=3$.
-Finally, substituting back into the first of the original simultaneous equations, 
-$$1+(2)(3)+c=0$$
-$$c=-7$$
-So, $\mathbf{x}=1\mathbf{i}+3\mathbf{j}-7\mathbf{k}$
-
-You can check this by taking the scalar product:
-$\mathbf{u}\cdot\mathbf{x}=(\mathbf{i}+2\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(1)(1)+(2)(3)+(1)(-7)=1+6-7=0$
-$\mathbf{v}\cdot\mathbf{x}=(4\mathbf{i}-\mathbf{j}+\mathbf{k})\cdot(\mathbf{i}+3\mathbf{j}-7\mathbf{k})=(4)(1)+(-1)(3)+(1)(-7)=4-3-1=0$
-:::
-
-:::{.callout-tip}
-Note here that the above example can be more easily computed using the **cross product**.
-:::
-
-## Applications - Work Done
-
-As stated earlier in the guide, the scalar product lets you calculate the work done by a force at an angle. Recall that the work done when the force vector is in the same direction as the movement of the object is: $W=|\mathbf{F}||\mathbf{d}|$. When a force is applied at an angle, the equation becomes: $W=|\mathbf{F}||\mathbf{d}|\cos(\theta)$, where $\theta$ is the angle between the resultant force vector and the direction of motion. Hence, the work done equation is just the dot product of force and displacement! 
-
-::: callout-note
-## Work done
-
-The **work done** can be calculated using the equation:
-$$W=|\mathbf{F}||\mathbf{d}|\cos(\theta)=\mathbf{F}\cdot\mathbf{d}$$
-
-where $W$ is the work done, $\theta$ is the  angle between the resultant force vector and the direction of motion, $\mathbf{F}$ is the force vector, and $\mathbf{d}$ is the displacement vector.
-:::
-
-
-
-::: {.callout-note appearance="simple"}
-## Example 12
-
-Suppose you have a wagon that is being pulled along by a force vector of magnitude $8N$ at an angle of $55^\circ$ to the direction of motion and that the wagon is pulled for $50m$. Then the work done by the force can be calculated as follows:
-$$W=|\mathbf{F}||\mathbf{d}|\cos(\theta)=(8)(50)(\cos(55^\circ))\approx{229 Nm}$$
 :::
 
 
